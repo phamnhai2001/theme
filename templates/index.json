@@ -21,6 +21,7 @@
   },
   "order": [
     "image_banner",
-    "feature"
+    "feature",
+    "ranking"
   ]
 }
