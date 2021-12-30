@@ -22,6 +22,7 @@
     }
   },
   "order": [
-    "image_banner"
+    "image_banner",
+    "feature"
   ]
 }
