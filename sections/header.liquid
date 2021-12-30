@@ -1,0 +1,90 @@
+<header id="header">
+    <div class="inner">
+        <div class="upper">
+            <div class="link">
+                <ul class="nav_mobile util_sp">
+                    <li>
+                        <a href="#" id="btn_sp">
+                            <span class="icon_nav_sp"></span>
+                            <span class="icon_nav_sp"></span>
+                            <span class="icon_nav_sp"></span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="search-card">
+                    <li class="util_pc">
+                        <a class="nav_item_top" href="#">お知らせ</a>
+                    </li>
+                    <li class="util_pc">
+                        <a class="nav_item_top" href="#">お気に入り</a>
+                    </li>
+                    <li>
+                        <div class="util_pc search_box">
+                            <form class="form-search" action="">
+                                <p></p>
+                                <input type="text" class="search_box_input" placeholder="キーワードを入力">
+
+                                <button type="submit" class="search_box_button">
+                                <img class="util_pc" src="assets/img/top/pc/header_icon_search.png" alt="">
+                                <img class="util_sp" src="assets/img/top/sp/sp_header_Icon_search.png" alt="">
+                            </button>
+                            </form>
+                        </div>
+                        <div class="util_sp search_box">
+                            <div class="search_box_button_sp">
+                                <a href="javascript:;" id="search_box_button_sp">
+                                    <img class="util_sp" src="assets/img/top/sp/sp_header_Icon_search.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="util_pc">
+                        <a href="advanced_search.html" id="advanced_search">
+                            <div class="advanced_search">
+                                <img class="util_pc" src="assets/img/top/pc/icon_urtra_serch.png" alt="詳しく検索">
+                                <img class="util_sp" src="assets/img/top/sp/sp_icon_detailserch.png" alt="詳しく検索">
+                                <span>ウルトラ検索</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="cart">
+                            <a href="#">
+                                <img class="util_pc" src="assets/img/top/pc/header_icon_cart.png" alt="">
+                                <img class="util_sp" src="assets/img/top/sp/sp_icon_cart_bk.png" alt="">
+                                <span>15</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="util_pc">
+                        <div class="login">
+                            <a href="#">ログイン</a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="logo util_sp">
+                    <a href="#">
+                        <img src="assets/img/top/sp/XXXXLOGO.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+{% schema %}
+{
+    "name": "sections.header.name",
+    "settings": [
+        {
+            "type": "link_list",
+            "id": "menu"
+        },
+        {
+            "type": "image_picker",
+            "id": "icon",
+            "label": "sections.header.settings.icon.label"
+        }
+    ]
+}
+{% endschema %}
