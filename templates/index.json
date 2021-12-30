@@ -1,7 +1,7 @@
 {
     "sections": {
         "image_banner": {
-            "type": "slick-main",
+            "type": "image-banner",
             "settings": {
                 "image": "shopify:\/\/shop_images\/image.jpg",
                 "image_overlay_opacity": 0,
