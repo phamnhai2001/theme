@@ -9,6 +9,7 @@
     "feature": {
       "type": "feature",
       "settings": {
+        "title": "Featured collection",
         "collection": "feature",
         "products_to_show": 4,
         "show_view_all": true,
