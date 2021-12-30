@@ -13,21 +13,18 @@
       }
     },
     "ranking": {
-        "type": "ranking",
-        "settings": {
-            
-        }
+      "type": "ranking",
+      "settings": {
+      }
     },
     "recomend": {
       "type": "recomend",
       "settings": {
-
       }
     },
     "new_rerease": {
       "type": "new-rerease",
       "settings": {
-
       }
     }
   },
