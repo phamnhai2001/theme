@@ -5,6 +5,20 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/image.jpg"
       }
+    },
+    "feature": {
+        "type": "feature",
+        "settings": {
+            "title" : "Fearture",
+            "collection": "feature",
+            "products_to_show": 5,
+            "show_view_all": true,
+            "add_image_padding": false,
+            "show_image_outline": false,
+            "show_rating": false,
+            "image_ratio": "square",
+            "show_secondary_image": false
+        }
     }
   },
   "order": [

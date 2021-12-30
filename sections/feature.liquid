@@ -1,0 +1,146 @@
+<section class="util_pc section list_slider" id="feature">
+    <div class="upper">
+        <div class="tlt_main">
+            <div class="item_thumbnail">
+                <img class="util_pc" src="assets/img/top/pc/feature.png" alt="">
+                <img class="util_sp" src="assets/img/top/sp/FEATURE.png" alt="">
+            </div>
+            <span>特集</span>
+        </div>
+        <div class="feature_index">
+            <div class="feature_item">
+                <a href="#">
+                    <div class="item_thumbnail">
+                        <img src="assets/img/top/pc/banner_feature.png" alt="">
+                    </div>
+                </a>
+            </div>
+            <div class="feature_item">
+                <a href="#">
+                    <div class="item_thumbnail">
+                        <img src="assets/img/top/pc/banner_feature-1.png" alt="">
+                    </div>
+                </a>
+            </div>
+            <div class="feature_item">
+                <a href="#">
+                    <div class="item_thumbnail">
+                        <img src="assets/img/top/pc/banner_feature-2.png" alt="">
+                    </div>
+                </a>
+            </div>
+            <div class="feature_item">
+                <a href="#">
+                    <div class="item_thumbnail">
+                        <img src="assets/img/top/pc/banner_feature-3.png" alt="">
+                    </div>
+                </a>
+            </div>
+            <div class="feature_item">
+                <a href="#">
+                    <div class="item_thumbnail">
+                        <img src="assets/img/top/pc/banner_feature-4.png" alt="">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="bg_feature"></div>
+</section>
+<section class="util_sp section feature_list">
+    <div class="upper">
+        <div class="tlt_main">
+            <div class="item_thumbnail">
+                <img class="util_pc" src="assets/img/top/pc/feature.png" alt="">
+                <img class="util_sp" src="assets/img/top/sp/FEATURE.png" alt="">
+            </div>
+            <span>特集</span>
+        </div>
+        <div class="feature_index">
+            <div class="container_feature">
+                <div class="feature_item">
+                    <a href="#">
+                        <div class="item_thumbnail">
+                            <img src="assets/img/top/pc/banner_feature.png" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="feature_item">
+                    <a href="#">
+                        <div class="item_thumbnail">
+                            <img src="assets/img/top/pc/banner_feature-1.png" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="feature_item">
+                    <a href="#">
+                        <div class="item_thumbnail">
+                            <img src="assets/img/top/pc/banner_feature-2.png" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="feature_item">
+                    <a href="#">
+                        <div class="item_thumbnail">
+                            <img src="assets/img/top/pc/banner_feature-3.png" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="feature_item">
+                    <a href="#">
+                        <div class="item_thumbnail">
+                            <img src="assets/img/top/pc/banner_feature-4.png" alt="">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg_feature"></div>
+</section>
+
+{% schema %}
+{
+    "name": "Feature-collection",
+    "tag": "section",
+    "blocks": [
+        {
+            "type": "text",
+            "name": "text-feature",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "text",
+                    "default": "text block",
+                    "label": "text"
+                },
+                {
+                    "type": "select",
+                    "id": "text_style",
+                    "options": [
+                        {
+                            "value": "body",
+                            "label": "option_1"
+                        },
+                        {
+                            "value": "subtitle",
+                            "label": "option_2"
+                        },
+                        {
+                            "value": "uppercase",
+                            "label": "option_3"
+                        }
+                    ],
+                    "default": "body",
+                    "label": "style-body"
+                }
+            ]
+        },
+        {
+            "type": "title",
+            "name": "title-feature",
+            "limit": 1
+        }
+    ]
+}
+{% endschema %}
