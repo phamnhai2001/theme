@@ -9,8 +9,14 @@
     "feature": {
       "type": "feature",
       "settings": {
-          "title": "Feature"
+          
       }
+    },
+    "ranking": {
+        "type": "ranking",
+        "settings": {
+            
+        }
     }
   },
   "order": [
