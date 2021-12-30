@@ -17,11 +17,25 @@
         "settings": {
             
         }
+    },
+    "recomend": {
+      "type": "recomend",
+      "settings": {
+
+      }
+    },
+    "new_rerease": {
+      "type": "new-rerease",
+      "settings": {
+
+      }
     }
   },
   "order": [
     "image_banner",
     "feature",
-    "ranking"
+    "ranking",
+    "recomend",
+    "new_rerease"
   ]
 }
