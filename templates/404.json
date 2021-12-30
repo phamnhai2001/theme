@@ -1,12 +1,12 @@
 {
-    "sections": {
-      "main": {
-        "type": "main-404",
-        "settings": {
-        }
+  "sections": {
+    "main": {
+      "type": "404",
+      "settings": {
       }
-    },
-    "order": [
-      "main"
-    ]
-  }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}
