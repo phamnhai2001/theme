@@ -25,15 +25,15 @@
                                 <input type="text" class="search_box_input" placeholder="キーワードを入力">
 
                                 <button type="submit" class="search_box_button">
-                                <img class="util_pc" src="assets/img/top/pc/header_icon_search.png" alt="">
-                                <img class="util_sp" src="assets/img/top/sp/sp_header_Icon_search.png" alt="">
+                                <img class="util_pc" srcset="{{ block.settings.icon | image_url }}" src="{{ block.settings.icon | image_url : '50px' }}" alt="{{ block.settings.icon.alt | escape }}">
+                                <img class="util_sp" src="" alt="">
                             </button>
                             </form>
                         </div>
                         <div class="util_sp search_box">
                             <div class="search_box_button_sp">
                                 <a href="javascript:;" id="search_box_button_sp">
-                                    <img class="util_sp" src="assets/img/top/sp/sp_header_Icon_search.png" alt="">
+                                    <img class="util_sp" src="" alt="">
                                 </a>
                             </div>
                         </div>
@@ -41,8 +41,8 @@
                     <li class="util_pc">
                         <a href="advanced_search.html" id="advanced_search">
                             <div class="advanced_search">
-                                <img class="util_pc" src="assets/img/top/pc/icon_urtra_serch.png" alt="詳しく検索">
-                                <img class="util_sp" src="assets/img/top/sp/sp_icon_detailserch.png" alt="詳しく検索">
+                                <img class="util_pc" src="" alt="詳しく検索">
+                                <img class="util_sp" src="" alt="詳しく検索">
                                 <span>ウルトラ検索</span>
                             </div>
                         </a>
@@ -50,8 +50,8 @@
                     <li>
                         <div class="cart">
                             <a href="#">
-                                <img class="util_pc" src="assets/img/top/pc/header_icon_cart.png" alt="">
-                                <img class="util_sp" src="assets/img/top/sp/sp_icon_cart_bk.png" alt="">
+                                <img class="util_pc" src="" alt="">
+                                <img class="util_sp" src="" alt="">
                                 <span>15</span>
                             </a>
                         </div>
@@ -75,12 +75,12 @@
 {% schema %}
 {
     "name": "Header",
-    "settings": [
+    "blocks": [
         {
             "type": "link_list",
             "id": "menu-bar",
-			"default": "main-menu",
-      		"label": "main-menu"
+            "default": "main-menu",
+            "label": "main-menu"
         },
         {
             "type": "image_picker",
