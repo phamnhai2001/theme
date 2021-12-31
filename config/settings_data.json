@@ -1,24 +1,4 @@
 {
-    "current": {
-        "sections": {
-            "menu": {
-                "type": "menu",
-                "blocks": {
-                    "menu-1": {
-                        "type": "menu",
-                        "settings": {
-                            "text": "",
-                            "link": ""
-                        }
-                    }
-                },
-                "block_order": [
-                    "menu-1"
-                ],
-                "settings": {
-                    
-                }
-            }
-        }
-    }
+  "current": {
+  }
 }
