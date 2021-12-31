@@ -1,5 +1,5 @@
 <header id="header">
-    {%assign variable = 'hello'%}
+  {%assign variable = 'hello'%}
     {{variable}}
     <div class="inner">
         <div class="upper">
@@ -77,23 +77,12 @@
 {% schema %}
 {
     "name": "Header",
-    "blocks": [
+    "settings": [
         {
             "type": "link_list",
-            "settings": [
-                {
-                "type": "text",
-                "id": "heading",
-                "default": "Quick links",
-                "label": "Heading"
-                },
-                {
-                "type": "link_list",
-                "id": "menu",
-                "default": "header",
-                "label": "menu header"
-                }
-            ]
+            "id": "menu-bar",
+			"default": "main-menu",
+      		"label": "main-menu"
         },
         {
             "type": "image_picker",
