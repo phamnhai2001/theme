@@ -1,4 +1,6 @@
 <header id="header">
+    {%assign variable = 'hello'%}
+    {{variable}}
     <div class="inner">
         <div class="upper">
             <div class="link">
@@ -78,9 +80,20 @@
     "blocks": [
         {
             "type": "link_list",
-            "id": "menu-bar",
-            "default": "main-menu",
-            "label": "main-menu"
+            "settings": [
+                {
+                "type": "text",
+                "id": "heading",
+                "default": "Quick links",
+                "label": "Heading"
+                },
+                {
+                "type": "link_list",
+                "id": "menu",
+                "default": "header",
+                "label": "menu header"
+                }
+            ]
         },
         {
             "type": "image_picker",
