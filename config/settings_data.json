@@ -1,4 +1,32 @@
 {
   "current": {
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+          "link_text": "",
+          "link_url": "",
+          "icon": "shopify:\/\/shop_images\/header_icon_search.png"
+        }
+      },
+      "menu": {
+        "type": "menu",
+        "settings": {
+        }
+      },
+      "image-banner": {
+        "type": "image-banner",
+        "settings": {
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "settings": {
+        }
+      }
+    },
+    "content_for_index": [
+
+    ]
   }
 }
