@@ -9,14 +9,16 @@
 
     <title>{{page_title}}</title>
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
-    <script src="{{'main.js' | asset_url}}"></script>
-    <script src="{{'jquery.min.js' | asset_url}}"></script>
-    <script src="{{'slick.min.js' | asset_url}}"></script>
 
     {{content_for_header}}
     {{ 'style.css' | asset_url | stylesheet_tag }}
     {{ 'slick.css' | asset_url | stylesheet_tag }}
     {{ 'slick-theme.css' | asset_url | stylesheet_tag }}
+    {{ 'select2.min.css' | asset_url | stylesheet_tag }}
+    {{ 'xzoom.css' | asset_url | stylesheet_tag }}
+    {{ 'owl.carousel.min.css' | asset_url | stylesheet_tag }}
+    {{ 'owl.theme.default.min.css' | asset_url | stylesheet_tag }}
+    {{ 'jquery.fancybox.min.css' | asset_url | stylesheet_tag }}
 
 </head>
 <body>
@@ -35,4 +37,16 @@
         {% section 'footer' %}
     </div>
 </body>
+<script src="{{'main.js' | asset_url}}"></script>
+<script src="{{'jquery.min.js' | asset_url}}"></script>
+<script src="{{'slick.min.js' | asset_url}}"></script>
+<script src="{{'jquery.fancybox.min.js' | asset_url}}"></script>
+<script src="{{'select2.min.js' | asset_url}}"></script>
+<script src="{{'jquery.easing.js' | asset_url}}"></script>
+<script src="{{'jquery-ui.slider.js' | asset_url}}"></script>
+<script src="{{'check_price_search.js' | asset_url}}"></script>
+<script src="{{'xzoom.min.js' | asset_url}}"></script>
+<script src="{{'jquery.matchHeight-min.js' | asset_url}}"></script>
+<script src="{{'owl.carousel.min.js' | asset_url}}"></script>
+
 </html>
