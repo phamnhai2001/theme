@@ -28,7 +28,7 @@
                                  {% if block.settings.icon != blank %}
                                     <img class="util_pc" srcset="{{ block.settings.icon | image_url }}" src=" {{ block.settings.icon | image_url: width: 50 | image_tag }}" alt="{{ block.settings.icon.alt | escape }}">
                                 {% else %}
-                                    {{ 'icon' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
+                                    {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
                                 {% endif %}
                             </button>
                             </form>
