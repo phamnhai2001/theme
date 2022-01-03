@@ -91,12 +91,29 @@
         {
             "name": "text",
             "type": "text",
-            "label": "Text"
+			"settings": [
+				{
+                    "type": "text",
+                    "id": "link_text",
+                    "label": "Link Text"
+                },
+				{
+					 "type": "url",
+            		"id": "link_url",
+            		"label": "Link URL"
+				}
+			]
         },
         {
-            "type": "image_picker",
-            "id": "icon",
-            "label": "image icon"
+            "name": "image",
+            "type": "image",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "icon",
+                    "label": "image icon"
+                }
+            ]
         }
     ],
     "presets": [
