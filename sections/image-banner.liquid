@@ -4,7 +4,7 @@
             <div class="img-wrap">
                 <!-- <img class="util_pc" src="assets/img/top/pc/slider_01.png" alt=""> -->
                 {% if block.settings.image != blank %}
-                <img class="util_pc" srcset="{{ block.settings.image | image_url }}" src=" {{ block.settings.image | image_url: width: 50 | image_tag }}" alt="{{ block.settings.image.alt | escape }}">
+                <img class="util_pc" srcset="{{ block.settings.image | image_url }}" src=" {{ 'header_icon_search.png' | image_url: width: 50 | image_tag }}" alt="">
             {% else %}
                 {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
             {% endif %}
