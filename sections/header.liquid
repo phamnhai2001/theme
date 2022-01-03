@@ -25,6 +25,22 @@
                                 <input type="text" class="search_box_input" placeholder="キーワードを入力">
 
                                 <button type="submit" class="search_box_button">
+                                  <div class="footer-block__details-content footer-block-image {{ block.settings.alignment }}">
+                    {%- if block.settings.image != blank -%}
+                      {%- assign image_size = block.settings.image_width | append: 'x' -%}
+                      <img
+                        srcset= "{{ block.settings.image | img_url: image_size }}, {{ block.settings.image | img_url: image_size, scale: 2 }} 2x"
+                        src="{{ block.settings.image | img_url: '400x' }}"
+                        alt="{{ block.settings.image.alt | escape }}"
+                        loading="lazy"
+                        width="{{ block.settings.image.width }}"
+                        height="{{ block.settings.image.height }}"
+                        style="max-width: min(100%, {{ block.settings.image_width }}px);"
+                      >
+                    {%- else -%}
+                      {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
+                    {%- endif -%}
+                  </div>
                                 <img class="util_pc" src=" {{ block.settings.image | image_url: width: 50 | image_tag }}" alt="{{ block.settings.icon.alt | escape }}">
                             </button>
                             </form>
