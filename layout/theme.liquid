@@ -25,7 +25,10 @@
         <div class="main">
             {%section 'menu'%}
             <div class="inner">
-                {{content_for_layout}}
+                {%section 'image-banner'%}
+                <div class="main_content">
+                    {{content_for_layout}}
+                </div>
             </div>
         </div>
 

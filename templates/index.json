@@ -1,11 +1,5 @@
 {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/image.jpg"
-      }
-    },
     "feature": {
       "type": "feature",
       "settings": {
@@ -49,7 +43,6 @@
     }
   },
   "order": [
-    "image_banner",
     "feature",
     "ranking",
     "recomend",
