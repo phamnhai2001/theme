@@ -33,6 +33,24 @@
     },
     "recomend": {
       "type": "recomend",
+      "blocks": {
+        "565e5f05-5da9-4ffc-b93a-01a8aec82448": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "fd447a14-c122-4034-92b0-9674f1023d26": {
+          "type": "text",
+          "settings": {
+            "text": "text block",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "565e5f05-5da9-4ffc-b93a-01a8aec82448",
+        "fd447a14-c122-4034-92b0-9674f1023d26"
+      ],
       "settings": {
       }
     },
