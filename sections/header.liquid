@@ -78,20 +78,26 @@
     "settings": [
         {
             "type": "text",
-            "id": "link_text",
-      		"label": "Link Text"
-        },
-        {
-            "type": "url",
-            "id": "link_url",
-            "label": "Link URL"
+            "id": "text",
+      		"label": "Text"
         }
     ],
     "blocks": [
         {
             "name": "text",
             "type": "text",
-            "label": "Text"
+			"settings": [
+				{
+                    "type": "text",
+                    "id": "link_text",
+                    "label": "Link Text"
+                },
+				{
+					 "type": "url",
+            		"id": "link_url",
+            		"label": "Link URL"
+				}
+			]
         },
         {
             "name": "image",
