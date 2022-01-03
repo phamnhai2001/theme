@@ -25,7 +25,7 @@
                                 <input type="text" class="search_box_input" placeholder="キーワードを入力">
 
                                 <button type="submit" class="search_box_button">
-                                <img class="util_pc" src="{{ block.settings.icon | image_url }}" src="{{ block.settings.icon | image_url : '50px' }}" alt="{{ block.settings.icon.alt | escape }}">
+                                <img class="util_pc" srcset="{{ block.settings.icon | image_url }}" src="{{ block.settings.icon | image_url : '50px' }}" alt="{{ block.settings.icon.alt | escape }}">
                                 <img class="util_sp" src="assets/img/top/sp/sp_header_Icon_search.png" alt="">
                             </button>
                             </form>
@@ -75,7 +75,7 @@
 {% schema %}
 {
     "name": "Header",
-    "blocks": [
+    "settings": [
         {
             "type": "link_list",
             "id": "menu-bar",
@@ -87,6 +87,8 @@
             "id": "icon",
             "label": "image-icon"
         }
+    ],
+    "settings": [
     ]
 }
 {% endschema %}
