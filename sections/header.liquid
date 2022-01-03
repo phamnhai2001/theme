@@ -25,7 +25,7 @@
                                 <input type="text" class="search_box_input" placeholder="キーワードを入力">
 
                                 <button type="submit" class="search_box_button">
-                                <img class="util_pc" srcset="{{ block.settings.icon | image_url }}" src="{{ block.settings.icon | image_url : '50px' }}" alt="{{ block.settings.icon.alt | escape }}">
+                                <img class="util_pc" srcset="{{ block.settings.icon | image_url }}" src=" {{ block.settings.image | image_url: width: 50 | image_tag }}" alt="{{ block.settings.icon.alt | escape }}">
                             </button>
                             </form>
                         </div>
@@ -74,6 +74,7 @@
 {% schema %}
 {
     "name": "Header",
+    "tag": "section",
     "settings": [
         {
             "type": "text",
@@ -84,11 +85,19 @@
             "type": "url",
             "id": "link_url",
             "label": "Link URL"
-        },
+        }
+    ],
+    "blocks": [
         {
-            "type": "image_picker",
-            "id": "icon",
-            "label": "image icon"
+            "name": "title",
+            "type": "text",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "icon",
+                    "label": "image icon"
+                }
+            ]
         }
     ],
     "presets": [
