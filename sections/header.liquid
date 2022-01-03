@@ -25,14 +25,23 @@
                                 <input type="text" class="search_box_input" placeholder="キーワードを入力">
 
                                 <button type="submit" class="search_box_button">
-                                <img class="util_pc" srcset="{{ block.settings.icon | image_url }}" src=" {{ block.settings.icon | image_url: width: 50 | image_tag }}" alt="{{ block.settings.icon.alt | escape }}">
+                                {% if block.settings.icon != blank %}
+                                    <img class="util_pc" srcset="{{ block.settings.icon | image_url }}" src=" {{ block.settings.icon | image_url: width: 50 | image_tag }}" alt="{{ block.settings.icon.alt | escape }}">
+                                {% else %}
+                                    {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
+                                {% endif %}
                             </button>
                             </form>
                         </div>
                         <div class="util_sp search_box">
                             <div class="search_box_button_sp">
                                 <a href="javascript:;" id="search_box_button_sp">
-                                    <img class="util_sp" src="assets/img/top/sp/sp_header_Icon_search.png" alt="">
+                                    <!-- <img class="util_sp" src="assets/img/top/sp/sp_header_Icon_search.png" alt=""> -->
+                                    {% if block.settings.icon != blank %}
+                                        <img class="util_pc" srcset="{{ block.settings.icon | image_url }}" src=" {{ block.settings.icon | image_url: width: 50 | image_tag }}" alt="{{ block.settings.icon.alt | escape }}">
+                                    {% else %}
+                                        {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
+                                    {% endif %}
                                 </a>
                             </div>
                         </div>
@@ -40,7 +49,12 @@
                     <li class="util_pc">
                         <a href="advanced_search.html" id="advanced_search">
                             <div class="advanced_search">
-                                <img class="util_pc" src="assets/img/top/pc/icon_urtra_serch.png" alt="詳しく検索">
+                                <!-- <img class="util_pc" src="assets/img/top/pc/icon_urtra_serch.png" alt="詳しく検索"> -->
+                                {% if block.settings.icon != blank %}
+                                    <img class="util_pc" srcset="{{ block.settings.icon | image_url }}" src=" {{ block.settings.icon | image_url: width: 50 | image_tag }}" alt="詳しく検索">
+                                {% else %}
+                                    {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
+                                {% endif %}
                                 <img class="util_sp" src="assets/img/top/sp/sp_icon_detailserch.png" alt="詳しく検索">
                                 <span>ウルトラ検索</span>
                             </div>
@@ -49,7 +63,12 @@
                     <li>
                         <div class="cart">
                             <a href="#">
-                                <img class="util_pc" src="assets/img/top/pc/header_icon_cart.png" alt="">
+                                <!-- <img class="util_pc" src="assets/img/top/pc/header_icon_cart.png" alt=""> -->
+                                {% if block.settings.icon != blank %}
+                                    <img class="util_pc" srcset="{{ block.settings.icon | image_url }}" src=" {{ block.settings.icon | image_url: width: 50 | image_tag }}" alt="{{ block.settings.icon.alt | escape }}">
+                                {% else %}
+                                    {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
+                                {% endif %}
                                 <img class="util_sp" src="assets/img/top/sp/sp_icon_cart_bk.png" alt="">
                                 <span>15</span>
                             </a>
