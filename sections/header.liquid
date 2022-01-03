@@ -76,10 +76,14 @@
     "name": "Header",
     "settings": [
         {
-            "type": "link_list",
-            "id": "menu-bar",
-			"default": "main-menu",
-      		"label": "main-menu"
+            "type": "text",
+            "id": "link_text",
+      		"label": "Link Text"
+        },
+        {
+            "type": "url",
+            "id": "link_url",
+            "label": "Link URL"
         },
         {
             "type": "image_picker",
@@ -87,7 +91,11 @@
             "label": "image-icon"
         }
     ],
-    "settings": [
+    "presets": [
+        {
+            "name": "Header",
+            "category": "Image w/ text"
+        }
     ]
 }
 {% endschema %}
