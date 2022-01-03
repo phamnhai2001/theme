@@ -20,12 +20,16 @@
 
 </head>
 <body>
-    {% section 'header' %}
-    <div class="main">
-        {%section 'menu'%}
-        {{content_for_layout}}
-    </div>
+    <div id="container">
+        {% section 'header' %}
+        <div class="main">
+            {%section 'menu'%}
+            <div class="inner">
+                {{content_for_layout}}
+            </div>
+        </div>
 
-    {% section 'footer' %}
+        {% section 'footer' %}
+    <div id="container">
 </body>
 </html>
