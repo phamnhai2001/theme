@@ -36,7 +36,12 @@
             <li>
                 <a class="c-item" href="#">
                     <div class="item_thumbnail">
-                        <img class="util_pc" src="assets/img/top/pc/img_01.png" alt="">
+<!--                         <img class="util_pc" src="assets/img/top/pc/img_01.png" alt=""> -->
+                      {% if block.settings.image != blank %}
+                              		<img class="util_pc" src=" {{ 'block.settings.image' | image_url: 'master' }} " alt="">
+                          		{% else %}
+                             		<img src= " {{ 'img_01.png' | asset_url }}">
+                          		{% endif %} 
                         <img class="util_sp" src="assets/img/top/pc/img_01.png" alt="">
                     </div>
                     <div class="c-item__body">
