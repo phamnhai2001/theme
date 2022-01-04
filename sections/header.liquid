@@ -31,7 +31,7 @@
                                     {%if ImageURL != blank %}
                                         <img class="util_pc" src=" {{ ImageURL | img_url: 'master'}}">    
                                     {%else%}
-                                        <img class="util_pc" src=" {{ 'header_icon_search.png' | asset_url }}">
+                                  	    <img class="util_pc" src=" {{ 'header_icon_search.png' | asset_url }}">
                                     {%endif%}
                             </button>
                             </form>
@@ -51,13 +51,13 @@
                     </li>
                     <li class="util_pc">
                         <a href="advanced_search.html" id="advanced_search">
-                            <div class="advanced_search">
+                            <div class="advanced_search" {{ block.shopify_attributes }}>
                                 {%assign ImageURL = section.settings.image %}
-                                {%if ImageURL != blank %}
-                                    <img class="util_pc" src=" {{ ImageURL | img_url: 'master'}}" alt="詳しく検索">    
-                                {%else%}
-                                    <img class="util_pc" src=" {{ 'icon_urtra_serch.png' | asset_url }}" alt="詳しく検索">
-                                {%endif%}
+                                    {%if ImageURL != blank %}
+                                        <img class="util_pc" src=" {{ ImageURL | img_url: 'master'}}">    
+                                    {%else%}
+                                  	    <img class="util_pc" src=" {{ 'icon_urtra_serch.png' | asset_url }}">
+                                    {%endif%}
                                 <img class="util_sp" src="assets/img/top/sp/sp_icon_detailserch.png" alt="詳しく検索">
                                 <span>ウルトラ検索</span>
                             </div>
@@ -70,7 +70,7 @@
                                 {%if ImageURL != blank %}
                                     <img class="util_pc" src=" {{ ImageURL | img_url: 'master'}}">    
                                 {%else%}
-                                    <img class="util_pc" src=" {{ 'header_icon_cart.png' | asset_url }}">
+                                      <img class="util_pc" src=" {{ 'header_icon_cart.png' | asset_url }}">
                                 {%endif%}
                                 <img class="util_sp" src="assets/img/top/sp/sp_icon_cart_bk.png" alt="">
                                 <span>15</span>
@@ -106,9 +106,6 @@
             "id": "image",
             "label": "Image"
           }
-    ],
-    "blocks": [
-          
     ]
   }
 {% endschema %}
