@@ -1,8 +1,5 @@
 {
   "sections": {
-    "menu": {
-
-    },
     "feature": {
       "type": "feature",
       "settings": {
@@ -60,13 +57,18 @@
         "show_image_outline": true,
         "show_vendor": false
       }
+    },
+    "menu": {
+      "type": "menu",
+      "settings": {
+      }
     }
   },
   "order": [
-    "menu",
     "feature",
     "ranking",
     "recomend",
-    "new_rerease"
+    "new_rerease",
+    "menu"
   ]
 }
