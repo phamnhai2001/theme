@@ -5,7 +5,6 @@
       "settings": {
         "title": "Featured collection",
         "collection": "feature",
-        "products_to_show": 4,
         "show_view_all": true,
         "swipe_on_mobile": false,
         "image_ratio": "square",
@@ -20,43 +19,42 @@
       "settings": {
         "title": "Ranking collection",
         "collection": "ranking",
-        "products_to_show": 4,
+        "products_to_show": 10,
         "show_view_all": true,
         "swipe_on_mobile": false,
         "image_ratio": "square",
         "show_secondary_image": false,
         "add_image_padding": false,
         "show_image_outline": true,
-        "show_vendor": false,
-        "show_rating": false
+        "show_vendor": false
       }
     },
     "recomend": {
       "type": "recomend",
-      "blocks": {
-        "565e5f05-5da9-4ffc-b93a-01a8aec82448": {
-          "type": "title",
-          "settings": {
-          }
-        },
-        "fd447a14-c122-4034-92b0-9674f1023d26": {
-          "type": "text",
-          "settings": {
-            "text": "text block",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "565e5f05-5da9-4ffc-b93a-01a8aec82448",
-        "fd447a14-c122-4034-92b0-9674f1023d26"
-      ],
       "settings": {
+        "title": "Recomend collection",
+        "collection": "recomend",
+        "show_view_all": true,
+        "swipe_on_mobile": false,
+        "image_ratio": "square",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false
       }
     },
     "new_rerease": {
       "type": "new-rerease",
       "settings": {
+        "title": "New rerease collection",
+        "collection": "new-rerease",
+        "show_view_all": true,
+        "swipe_on_mobile": false,
+        "image_ratio": "square",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false
       }
     }
   },
