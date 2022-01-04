@@ -57,18 +57,12 @@
         "show_image_outline": true,
         "show_vendor": false
       }
-    },
-    "menu": {
-      "type": "menu",
-      "settings": {
-      }
     }
   },
   "order": [
     "feature",
     "ranking",
     "recomend",
-    "new_rerease",
-    "menu"
+    "new_rerease"
   ]
 }
