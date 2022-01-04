@@ -4,6 +4,7 @@
       "header": {
         "type": "header",
         "settings": {
+          "image": "shopify:\/\/shop_images\/header_icon_search.png"
         }
       },
       "menu": {
