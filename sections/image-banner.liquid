@@ -2,15 +2,11 @@
     <div class="slider-wrap">
         <div class="image-slider">
             <div class="img-wrap">
-<!--                     {% if block.settings.image != blank %}
+                    {% if block.settings.image != blank %}
                         <img class="util_pc" src=" {{ block.settings.image | image_url: 'master' }} " alt="">
                     {% else %}
                         <img class="util_pc" src=" {{ 'slider_01.png' | asset_url }}">
-                    {% endif %}  -->
-              {% for block in section.blocks %}
-      
-        <img class="util_pc" src=" {{ block.settings.image | image_url: 'master' }} " alt="">
-{% endfor %}
+                    {% endif %} 
                 <img class="util_sp" src="assets/img/top/sp/sp_slider_01.png" alt="">
             </div>
             <div class="img-wrap">
