@@ -51,7 +51,7 @@
                             <div class="advanced_search">
                                 <!-- <img class="util_pc" src="assets/img/top/pc/icon_urtra_serch.png" alt="詳しく検索"> -->
                                 {% if block.settings.icon != blank %}
-                                    <img class="util_pc" srcset="{{ block.settings.icon | image_url }}" src=" {{ block.settings.icon | image_url: width: 50 | image_tag }}" alt="詳しく検索">
+                                    <img class="util_pc" srcset="{{ block.settings.icon | img_url }}" src=" {{ block.settings.icon | img_url: width: 50 | image_tag }}" alt="詳しく検索">
                                 {% else %}
                                     {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
                                 {% endif %}
