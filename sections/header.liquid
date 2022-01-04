@@ -28,13 +28,9 @@
 
                                 <button type="submit" class="search_box_button">
             
-                              	{% if block.settings.image != blank %}
-                                  	{%for block in section.blocks %}
+                              	
                                     	<img class="util_pc" src=" {{ 'header_icon_search.png' | asset_url }} ">
-                                  	{%endfor%}
-                              	{% else %}
-                                    {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
-                                {% endif %}
+                                  
                             </button>
                             </form>
                         </div>
