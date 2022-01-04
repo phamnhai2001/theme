@@ -8,11 +8,8 @@
                         <img class="util_pc" src=" {{ 'slider_01.png' | asset_url }}">
                     {% endif %}  -->
               {% for block in section.blocks %}
-  {% case block.type %}
-    {% when 'slide' %}
       
         <img class="util_pc" src=" {{ block.settings.image | image_url: 'master' }} " alt="">
-  {% endcase %}
 {% endfor %}
                 <img class="util_sp" src="assets/img/top/sp/sp_slider_01.png" alt="">
             </div>
