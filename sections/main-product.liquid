@@ -1,0 +1,1123 @@
+<!DOCTYPE html>
+<html lang="{{request.locale.iso_code}}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="{{canonical_url}}">
+    <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
+
+    <title>{{page_title}}</title>
+    <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
+
+    {{content_for_header}}
+    {{ 'style.css' | asset_url | stylesheet_tag }}
+    {{ 'slick.css' | asset_url | stylesheet_tag }}
+    {{ 'slick-theme.css' | asset_url | stylesheet_tag }}
+    {{ 'select2.min.css' | asset_url | stylesheet_tag }}
+    {{ 'xzoom.css' | asset_url | stylesheet_tag }}
+    {{ 'owl.carousel.min.css' | asset_url | stylesheet_tag }}
+    {{ 'owl.theme.default.min.css' | asset_url | stylesheet_tag }}
+    {{ 'jquery.fancybox.min.css' | asset_url | stylesheet_tag }}
+
+    <style>
+        .select2-container--default .select2-results__option--highlighted.select2-results__option--selectable{
+            background-color: #CAE2DC;
+            font-weight: 700;
+            letter-spacing: 1.6px;
+        }
+        /*.select2-container--default .select2-results .select2-results__options {*/
+        /*border: 1px solid #121212;*/
+        /*}*/
+        .select2-results__option--selectable {
+            font-weight: 500;
+        }
+        .select2-results__option {
+            letter-spacing: 1.6px;
+        }
+        .select2-container--default .select2-results__option--selected {
+            margin: 12px;
+        }
+        @media only screen and (min-width: 1248px) and (max-width: 1919px) {
+            .select2-container--default .select2-results__option--highlighted.select2-results__option--selectable{
+                font-size: 1.0422vw;
+            }
+            .select2-results__option--selectable {
+                font-size: 1.0422vw;
+            }
+            .select2-container--default .select2-results__option--selected {
+                margin: 0.62532569vw;
+            }
+        }
+        @media only screen and (max-width: 1247px) and (min-width: 769px) {
+            .select2-container--default .select2-results__option--selected {
+                margin: 4px;
+            }
+        }
+        @media (max-width: 768px) {
+            .select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+                font-size: 3.645833333vw;
+                font-weight: 500;
+            }
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    {% section 'header' %}
+    <div class="main" id="product_detail">
+        {%section 'menu'%}
+        <div id="navfilter" class="util_sp">
+            <a href="#" class="logo_open">
+                <img src="assets/img/top/sp/XXXXLOGO-1.png" alt="">
+            </a>
+            <a href="#" id="btn_close_pc"><img src="assets/img/top/sp/sp_btn_close.png" alt="閉じる"></a>
+        </div>
+        <div class="inner">
+            <div class="product_detail" id="main_content">
+                <div class="upper">
+                    <div class="navi_top">
+                        <ul>
+                            <li><a href="/">TOP</a></li>
+                            <li><a href="/">音楽</a></li>
+                            <li><a href="/">CD</a></li>
+                            <li><span class="current">商品詳細</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <section class="section container_product_detail">
+                    <div class="upper">
+                        <div class="info_details">
+                            <div class="slider_thumbail">
+                                <div class="slider slider_main_thumbail">
+                                    <div class="img_preview">
+                                        <img class="xzoom" src="assets/img/gallery/preview/img_main.png" xoriginal="assets/img/gallery/original/img_main.png" />
+                                    </div>
+
+                                    <div class="list_item_img">
+                                        <a href="assets/img/gallery/preview/img_main.png" style="display: inline-block;">
+                                            <img class="xzoom-gallery" width="68" src="assets/img/gallery/preview/img_main.png" xpreview="assets/img/gallery/preview/img_main.png"/>
+                                        </a>
+
+                                        <a href="assets/img/gallery/original/02_o_car.jpg" style="display: inline-block;">
+                                            <img class="xzoom-gallery" src="assets/img/gallery/thumbs/02_o_car.jpg" xpreview="assets/img/gallery/preview/02_o_car.jpg" />
+                                        </a>
+
+                                        <a href="assets/img/gallery/original/03_r_car.jpg" style="display: inline-block;">
+                                            <img class="xzoom-gallery" src="assets/img/gallery/preview/03_r_car.jpg" />
+                                        </a>
+
+                                        <a href="assets/img/gallery/original/04_g_car.jpg" style="display: inline-block;">
+                                            <img class="xzoom-gallery" src="assets/img/gallery/preview/04_g_car.jpg" />
+                                        </a>
+                                        <a href="assets/img/gallery/preview/img_main.png" style="display: inline-block;">
+                                            <img class="xzoom-gallery" width="68" src="assets/img/gallery/preview/img_main.png" xpreview="assets/img/gallery/preview/img_main.png"/>
+                                        </a>
+
+                                        <a href="assets/img/gallery/original/02_o_car.jpg" style="display: inline-block;">
+                                            <img class="xzoom-gallery" src="assets/img/gallery/thumbs/02_o_car.jpg" xpreview="assets/img/gallery/preview/02_o_car.jpg" />
+                                        </a>
+
+                                        <a href="assets/img/gallery/original/03_r_car.jpg" style="display: inline-block;">
+                                            <img class="xzoom-gallery" src="assets/img/gallery/preview/03_r_car.jpg" />
+                                        </a>
+
+                                        <a href="assets/img/gallery/original/04_g_car.jpg" style="display: inline-block;">
+                                            <img class="xzoom-gallery" src="assets/img/gallery/preview/04_g_car.jpg" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info_details_list c-item">
+                                <div class="c-item__body">
+                                    <div class="c_category">
+                                        <span>CD</span>
+                                    </div>
+                                    <h3 class="c-item__title">HERMITAGE</h3>
+                                    <div class="c-item__author">RON SEXSMITH</div>
+                                    <ul>
+                                        <li>エルミタージュ / ロン・セクスミス</li>
+                                        <li>ジャンル：<span>ROCK</span>/<span>POPS</span></li>
+                                        <li>2020/01/22 発売</li>
+                                        <li>品番 : CDSOL-1897/1906</li>
+                                        <li>JAN : 4526180517726</li>
+                                        <li>発売国 : <span>国内盤</span></li>
+                                        <li>年代：録音日2020/01/22</li>
+                                        <li>状態 : <span>新品</span></li>
+                                        <li>LABEL : <span>SOLID</span></li>
+                                        <li>フォーマット : CD+DVD</li>
+                                        <li>枚数 : 10枚組</li>
+                                        <li>付録 : ー</li>
+                                        <li>仕様 : <span class="txt_num2">BOXセット</span></li>
+                                        <li>特典 : 先行予約でトートバッグ</li>
+                                        <li>関連タグ : <span class="txt_num2">インディーロック・フォーク・ポストロック</span></li>
+                                    </ul>
+                                </div>
+                                <div class="set_cart_buy">
+                                    <form class="add_cart_item" action="">
+                                        <div class="c-item__price">
+                                            <h3>2,000円</h3><span>(税別)</span>
+                                        </div>
+                                        <div class="in_stock">在庫あり</div>
+                                        <div class="out_in_stock">在庫なし</div>
+                                        <button type="submit" class="btn_short01 btn_cart_item"><span>カートに入れる</span></button>
+                                        <div class="active_favorite"><span>お気に入りに登録</span></div>
+                                        <div class="sns_social">
+                                            <ul class="col3">
+                                                <li>
+                                                    <a class="resp-sharing-button__link" href="https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.jotnw.or.jp%2Fkids%2F" target="_blank" rel="noopener" aria-label="">
+                                                        <img src="assets/img/top/pc/btn_share_insta.png" alt="sns facebook">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="resp-sharing-button__link" href="https://twitter.com/intent/tweet/?text=%E8%87%93%E5%99%A8%E7%A7%BB%E6%A4%8D%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%80%81%E3%82%AF%E3%82%A4%E3%82%BA%E3%82%92%E3%81%97%E3%81%AA%E3%81%8C%E3%82%89%E6%A5%BD%E3%81%97%E3%81%8F%E5%AD%A6%E3%81%B9%E3%82%8B%E3%82%88%EF%BC%81%E5%AE%B6%E6%97%8F%E3%81%BF%E3%82%93%E3%81%AA%E3%81%A7%E5%AD%A6%E3%82%93%E3%81%A7%E3%81%AD%EF%BC%81&amp;url=https%3A%2F%2Fwww.jotnw.or.jp%2Fkids%2F" target="_blank" rel="noopener" aria-label="">
+                                                        <img src="assets/img/top/pc/btn_share_fb.png" alt="sns twitter">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="line_btn" href="http://line.me/R/msg/text/?臓器移植について、クイズをしながら楽しく学べるよ！家族みんなで学んでね！https://www.jotnw.or.jp/kids">
+                                                        <img src="assets/img/top/pc/btn_share_twitter.png" alt="sns line">
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content_details">
+                            <div class="item_description">
+                                <h3>ジュノ賞を複数回獲得するカナダの偉大なソングライター、ロン・セクスミス。歴史的名盤『ロン・セクスミス』から25周年となる2020年、盟友ドン・カーのプロデュースによるニュー・アルバム『エルミタージュ』をリリース。</h3>
+                                <p>メジャー・デビュー・アルバムとなった歴史的名盤『Ron Sexsmith』から25周年となる2020年、ジュノ賞（カナダのグラミー賞）を複数回獲得するカナダの偉大なソングライター、Ron Sexsmithがニュー・アルバム『Hermitage』をリリースする。アルバムは長年のホーム・タウン、オンタリオ州トロントから、より田舎である同州のストラトフォードに移って初となる作品で、Ronにとっては欠かすことのできない盟友、Don Kerrがプロデュース。二人はレコーディングの為、Ronのリヴィングルームに機材をセット・アップ。ドラム以外の全ての楽器をRonがプレイし、アルバムは完成した。『Hermitage』からのファースト・シングルは「You Don’t Wanna Hear It」で、アルバムは2020年4月17日にリリースされる。Ron Sexsmithはカナダのオンタリオ州セント・キャサリンズ出身のシンガーソングライターだ。14歳のころからバンド活動を開始し、1991年にデビュー・アルバム『Grand Opera Lane』をリリース。その後も、『Ron Sexsmith』(1995年)、『Other Songs』 (1997年)、『Whereabouts』 (1999年)、『Blue Boy』 (2001年)、『Cobblestone Runway』 (2002年)、『Retriever』 (2004年)、『Time Being』 (2006年)、『Exit Strategy Of The Soul』 (2008年)、『Long Player Late Bloomer』 (2011年)、『Forever Endeavour』 (2013年)、『Carousel One』 (2015年)、『The Last Rider』（2017年）と継続的にスタジオ・アルバムのリリースを続けている。また、Daniel Lanois、Mitchell Froom、Ane Brun、Tchad Blake、Ray Kennedy、Don Kerr、Bob Rock等とコラボレートし、Feist、Michael Buble、k. D. Lang等には楽曲提供も行っている。</p>
+                            </div>
+                            <div class="inner_item_music">
+                                <div class="list_item_music">
+                                    <div class="btn_short01 btn_view"><span>視聴する</span></div>
+                                    <ul class="list_item_music_more">
+                                        <li>
+                                            <a href="#">1. Spring of the Following Year</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">2. Chateau Mermaid</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">3. Lo and Behold</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">4. Glow in the Dark Stars</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">5. Small Minded World</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">6. Winery Blues</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">7. When Love Pans Out</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">8. You Don’t Wanna Hear It</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"> 9. Dig Nation</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">10. Whatever Shape Your Heart Is In</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">11. Apparently Au Pair</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">12. Is It Or Isn’t It</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">13. Morning Town</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">14. Think of You Fondly</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">15. Spring of the Following Year</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">16. Chateau Mermaid</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">17. Lo and Behold</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">18. Glow in the Dark Stars</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">19. Small Minded World</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">20. Winery Blues</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">21. When Love Pans Out</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">22. You Don’t Wanna Hear It</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">23. Dig Nation</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">24. Whatever Shape Your Heart Is In</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">25. Apparently Au Pair</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">26. Is It Or Isn’t It</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">27. Morning Town</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">28. Think of You Fondly</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">29. Think of You Fondly</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">30. Think of You Fondly</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">31. Think of You Fondly</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">32. Think of You Fondly</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">33. Think of You Fondly</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">34. Think of You Fondly</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">35. Think of You Fondly</a>
+                                        </li>
+                                    </ul>
+                                    <div class="more_list_music">
+                                        <span>MORE</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video_music">
+                                <iframe width="100%" max-width="1164" height="709" src="https://www.youtube.com/embed/s2lrXYmpi7w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <div class="container_tag">
+                                <h3>関連タグ</h3>
+                                <ul>
+                                    <li><a href="#">#インディーロック</a></li>
+                                    <li><a href="#">#フォーク</a></li>
+                                    <li><a href="#">#ポストロック</a></li>
+                                    <li><a href="#">#ポップス</a></li>
+                                    <li><a href="#">#限定</a></li>
+                                    <li><a href="#">#FUJI ROCK FES 2020</a></li>
+                                    <li><a href="#">#インディーズ</a></li>
+                                    <li><a href="#">#ロック</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="util_pc section list_slider recomend" id="slider_recomend">
+                    <div class="upper">
+                        <div class="tlt_main">
+                            <div class="item_thumbnail">
+                                <img class="util_pc" src="assets/img/top/pc/recomend.png" alt="">
+                                <img class="util_sp" src="assets/img/top/sp/RECOMEND.png" alt="">
+                            </div>
+                            <span>おすすめ</span>
+                        </div>
+                        <div class="slider_inner">
+                            <ul id="carousel02" class="slider_01 owl-carousel owl-theme">
+                                <li>
+                                    <a class="c-item" href="#">
+                                        <div class="item_thumbnail">
+                                            <img class="util_pc" src="assets/img/top/pc/200x200.png" alt="">
+                                            <img class="util_sp" src="assets/img/top/pc/200x200.png" alt="">
+                                        </div>
+                                        <div class="c-item__body">
+                                            <div class="c_category"><span>CD</span></div>
+                                            <h3 class="c-item__title">Text Text Text Text Text Text Text Text Text Text</h3>
+                                            <div class="c-item__author">SEVENTEEN</div>
+                                            <div class="c-item__price">2,000円（税抜）</div>
+                                            <div class="c-item__date">2020/01/22 発売</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="c-item" href="#">
+                                        <div class="item_thumbnail">
+                                            <img class="util_pc" src="assets/img/top/pc/200x200.png" alt="">
+                                            <img class="util_sp" src="assets/img/top/pc/200x200.png" alt="">
+                                        </div>
+                                        <div class="c-item__body">
+                                            <div class="c_category"><span>CD</span></div>
+                                            <h3 class="c-item__title">Text Text Text Text Text Text Text Text Text Text</h3>
+                                            <div class="c-item__author">SEVENTEEN</div>
+                                            <div class="c-item__price">2,000円（税抜）</div>
+                                            <div class="c-item__date">2020/01/22 発売</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="c-item" href="#">
+                                        <div class="item_thumbnail">
+                                            <img class="util_pc" src="assets/img/top/pc/200x200.png" alt="">
+                                            <img class="util_sp" src="assets/img/top/pc/200x200.png" alt="">
+                                        </div>
+                                        <div class="c-item__body">
+                                            <div class="c_category"><span>CD</span></div>
+                                            <h3 class="c-item__title">Text Text Text Text Text Text Text Text Text Text</h3>
+                                            <div class="c-item__author">SEVENTEEN</div>
+                                            <div class="c-item__price">2,000円（税抜）</div>
+                                            <div class="c-item__date">2020/01/22 発売</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="c-item" href="#">
+                                        <div class="item_thumbnail">
+                                            <img class="util_pc" src="assets/img/top/pc/200x200.png" alt="">
+                                            <img class="util_sp" src="assets/img/top/pc/200x200.png" alt="">
+                                        </div>
+                                        <div class="c-item__body">
+                                            <div class="c_category"><span>CD</span></div>
+                                            <h3 class="c-item__title">Text Text Text Text Text Text Text Text Text Text</h3>
+                                            <div class="c-item__author">SEVENTEEN</div>
+                                            <div class="c-item__price">2,000円（税抜）</div>
+                                            <div class="c-item__date">2020/01/22 発売</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="c-item" href="#">
+                                        <div class="item_thumbnail">
+                                            <img class="util_pc" src="assets/img/top/pc/200x200.png" alt="">
+                                            <img class="util_sp" src="assets/img/top/pc/200x200.png" alt="">
+                                        </div>
+                                        <div class="c-item__body">
+                                            <div class="c_category"><span>CD</span></div>
+                                            <h3 class="c-item__title">Text Text Text Text Text Text Text Text Text Text</h3>
+                                            <div class="c-item__author">SEVENTEEN</div>
+                                            <div class="c-item__price">2,000円（税抜）</div>
+                                            <div class="c-item__date">2020/01/22 発売</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="c-item" href="#">
+                                        <div class="item_thumbnail">
+                                            <img class="util_pc" src="assets/img/top/pc/200x200.png" alt="">
+                                            <img class="util_sp" src="assets/img/top/pc/200x200.png" alt="">
+                                        </div>
+                                        <div class="c-item__body">
+                                            <div class="c_category"><span>CD</span></div>
+                                            <h3 class="c-item__title">Text Text Text Text Text Text Text Text Text Text</h3>
+                                            <div class="c-item__author">SEVENTEEN</div>
+                                            <div class="c-item__price">2,000円（税抜）</div>
+                                            <div class="c-item__date">2020/01/22 発売</div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="util_pc bg_slider_top"></div>
+                    </div>
+                </section>
+                <section class="util_sp section recomend" id="container_recomend">
+                    <div class="upper">
+                        <div class="tlt_main">
+                            <div class="item_thumbnail">
+                                <img class="util_pc" src="assets/img/top/pc/recomend.png" alt="">
+                                <img class="util_sp" src="assets/img/top/sp/RECOMEND.png" alt="">
+                            </div>
+                            <span>おすすめ</span>
+                        </div>
+                        <div class="container_recomend">
+                            <ul class="list_item_ranking">
+                                <li>
+                                    <a class="c-item" href="#">
+                                        <div class="item_thumbnail">
+                                            <img class="util_pc" src="assets/img/top/pc/200x200.png" alt="">
+                                            <img class="util_sp" src="assets/img/top/pc/200x200.png" alt="">
+                                        </div>
+                                        <div class="c-item__body">
+                                            <div class="c_category"><span>CD</span></div>
+                                            <h3 class="c-item__title">Text Text Text Text Text Text Text Text Text Text</h3>
+                                            <div class="c-item__author">SEVENTEEN</div>
+                                            <div class="c-item__price">2,000円（税抜）</div>
+                                            <div class="c-item__date">2020/01/22 発売</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="c-item" href="#">
+                                        <div class="item_thumbnail">
+                                            <img class="util_pc" src="assets/img/top/pc/200x200.png" alt="">
+                                            <img class="util_sp" src="assets/img/top/pc/200x200.png" alt="">
+                                        </div>
+                                        <div class="c-item__body">
+                                            <div class="c_category"><span>CD</span></div>
+                                            <h3 class="c-item__title">Text Text Text Text Text Text Text Text Text Text</h3>
+                                            <div class="c-item__author">SEVENTEEN</div>
+                                            <div class="c-item__price">2,000円（税抜）</div>
+                                            <div class="c-item__date">2020/01/22 発売</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="c-item" href="#">
+                                        <div class="item_thumbnail">
+                                            <img class="util_pc" src="assets/img/top/pc/200x200.png" alt="">
+                                            <img class="util_sp" src="assets/img/top/pc/200x200.png" alt="">
+                                        </div>
+                                        <div class="c-item__body">
+                                            <div class="c_category"><span>CD</span></div>
+                                            <h3 class="c-item__title">Text Text Text Text Text Text Text Text Text Text</h3>
+                                            <div class="c-item__author">SEVENTEEN</div>
+                                            <div class="c-item__price">2,000円（税抜）</div>
+                                            <div class="c-item__date">2020/01/22 発売</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="c-item" href="#">
+                                        <div class="item_thumbnail">
+                                            <img class="util_pc" src="assets/img/top/pc/200x200.png" alt="">
+                                            <img class="util_sp" src="assets/img/top/pc/200x200.png" alt="">
+                                        </div>
+                                        <div class="c-item__body">
+                                            <div class="c_category"><span>CD</span></div>
+                                            <h3 class="c-item__title">Text Text Text Text Text Text Text Text Text Text</h3>
+                                            <div class="c-item__author">SEVENTEEN</div>
+                                            <div class="c-item__price">2,000円（税抜）</div>
+                                            <div class="c-item__date">2020/01/22 発売</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="c-item" href="#">
+                                        <div class="item_thumbnail">
+                                            <img class="util_pc" src="assets/img/top/pc/200x200.png" alt="">
+                                            <img class="util_sp" src="assets/img/top/pc/200x200.png" alt="">
+                                        </div>
+                                        <div class="c-item__body">
+                                            <div class="c_category"><span>CD</span></div>
+                                            <h3 class="c-item__title">Text Text Text Text Text Text Text Text Text Text</h3>
+                                            <div class="c-item__author">SEVENTEEN</div>
+                                            <div class="c-item__price">2,000円（税抜）</div>
+                                            <div class="c-item__date">2020/01/22 発売</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="c-item" href="#">
+                                        <div class="item_thumbnail">
+                                            <img class="util_pc" src="assets/img/top/pc/200x200.png" alt="">
+                                            <img class="util_sp" src="assets/img/top/pc/200x200.png" alt="">
+                                        </div>
+                                        <div class="c-item__body">
+                                            <div class="c_category"><span>CD</span></div>
+                                            <h3 class="c-item__title">Text Text Text Text Text Text Text Text Text Text</h3>
+                                            <div class="c-item__author">SEVENTEEN</div>
+                                            <div class="c-item__price">2,000円（税抜）</div>
+                                            <div class="c-item__date">2020/01/22 発売</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="c-item" href="#">
+                                        <div class="item_thumbnail">
+                                            <img class="util_pc" src="assets/img/top/pc/200x200.png" alt="">
+                                            <img class="util_sp" src="assets/img/top/pc/200x200.png" alt="">
+                                        </div>
+                                        <div class="c-item__body">
+                                            <div class="c_category"><span>CD</span></div>
+                                            <h3 class="c-item__title">Text Text Text Text Text Text Text Text Text Text</h3>
+                                            <div class="c-item__author">SEVENTEEN</div>
+                                            <div class="c-item__price">2,000円（税抜）</div>
+                                            <div class="c-item__date">2020/01/22 発売</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="c-item" href="#">
+                                        <div class="item_thumbnail">
+                                            <img class="util_pc" src="assets/img/top/pc/200x200.png" alt="">
+                                            <img class="util_sp" src="assets/img/top/pc/200x200.png" alt="">
+                                        </div>
+                                        <div class="c-item__body">
+                                            <div class="c_category"><span>CD</span></div>
+                                            <h3 class="c-item__title">Text Text Text Text Text Text Text Text Text Text</h3>
+                                            <div class="c-item__author">SEVENTEEN</div>
+                                            <div class="c-item__price">2,000円（税抜）</div>
+                                            <div class="c-item__date">2020/01/22 発売</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="c-item" href="#">
+                                        <div class="item_thumbnail">
+                                            <img class="util_pc" src="assets/img/top/pc/200x200.png" alt="">
+                                            <img class="util_sp" src="assets/img/top/pc/200x200.png" alt="">
+                                        </div>
+                                        <div class="c-item__body">
+                                            <div class="c_category"><span>CD</span></div>
+                                            <h3 class="c-item__title">Text Text Text Text Text Text Text Text Text Text</h3>
+                                            <div class="c-item__author">SEVENTEEN</div>
+                                            <div class="c-item__price">2,000円（税抜）</div>
+                                            <div class="c-item__date">2020/01/22 発売</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="c-item" href="#">
+                                        <div class="item_thumbnail">
+                                            <img class="util_pc" src="assets/img/top/pc/200x200.png" alt="">
+                                            <img class="util_sp" src="assets/img/top/pc/200x200.png" alt="">
+                                        </div>
+                                        <div class="c-item__body">
+                                            <div class="c_category"><span>CD</span></div>
+                                            <h3 class="c-item__title">Text Text Text Text Text Text Text Text Text Text</h3>
+                                            <div class="c-item__author">SEVENTEEN</div>
+                                            <div class="c-item__price">2,000円（税抜）</div>
+                                            <div class="c-item__date">2020/01/22 発売</div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="more">
+                                <span>もっと見る</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="util_pc section list_slider browsing_history" id="slider_browsing_history">
+                    <div class="upper">
+                        <div class="tlt_main">
+                            <div class="item_thumbnail">
+                                <img src="assets/img/top/pc/browsing_history.png" alt="">
+                            </div>
+                            <span>おすすめ</span>
+                        </div>
+                        <div class="slider_inner">
+                            <ul id="carousel" class="slider_01 owl-carousel owl-theme">
+                                <li>
+                                    <a class="c-item" href="#">
+                                        <div class="item_thumbnail">
+                                            <img src="assets/img/top/pc/200x200.png" alt="">
+                                        </div>
+                                        <div class="c-item__body">
+                                            <div class="c_category"><span>CD</span></div>
+                                            <h3 class="c-item__title">Text Text Text Text Text Text Text Text Text Text</h3>
+                                            <div class="c-item__author">SEVENTEEN</div>
+                                            <div class="c-item__price">2,000円（税抜）</div>
+                                            <div class="c-item__date">2020/01/22 発売</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="c-item" href="#">
+                                        <div class="item_thumbnail">
+                                            <img src="assets/img/top/pc/200x200.png" alt="">
+                                        </div>
+                                        <div class="c-item__body">
+                                            <div class="c_category"><span>CD</span></div>
+                                            <h3 class="c-item__title">Text Text Text Text Text Text Text Text Text Text</h3>
+                                            <div class="c-item__author">SEVENTEEN</div>
+                                            <div class="c-item__price">2,000円（税抜）</div>
+                                            <div class="c-item__date">2020/01/22 発売</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="c-item" href="#">
+                                        <div class="item_thumbnail">
+                                            <img src="assets/img/top/pc/200x200.png" alt="">
+                                        </div>
+                                        <div class="c-item__body">
+                                            <div class="c_category"><span>CD</span></div>
+                                            <h3 class="c-item__title">Text Text Text Text Text Text Text Text Text Text</h3>
+                                            <div class="c-item__author">SEVENTEEN</div>
+                                            <div class="c-item__price">2,000円（税抜）</div>
+                                            <div class="c-item__date">2020/01/22 発売</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="c-item" href="#">
+                                        <div class="item_thumbnail">
+                                            <img src="assets/img/top/pc/200x200.png" alt="">
+                                        </div>
+                                        <div class="c-item__body">
+                                            <div class="c_category"><span>CD</span></div>
+                                            <h3 class="c-item__title">Text Text Text Text Text Text Text Text Text Text</h3>
+                                            <div class="c-item__author">SEVENTEEN</div>
+                                            <div class="c-item__price">2,000円（税抜）</div>
+                                            <div class="c-item__date">2020/01/22 発売</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="c-item" href="#">
+                                        <div class="item_thumbnail">
+                                            <img src="assets/img/top/pc/200x200.png" alt="">
+                                        </div>
+                                        <div class="c-item__body">
+                                            <div class="c_category"><span>CD</span></div>
+                                            <h3 class="c-item__title">Text Text Text Text Text Text Text Text Text Text</h3>
+                                            <div class="c-item__author">SEVENTEEN</div>
+                                            <div class="c-item__price">2,000円（税抜）</div>
+                                            <div class="c-item__date">2020/01/22 発売</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="c-item" href="#">
+                                        <div class="item_thumbnail">
+                                            <img src="assets/img/top/pc/200x200.png" alt="">
+                                        </div>
+                                        <div class="c-item__body">
+                                            <div class="c_category"><span>CD</span></div>
+                                            <h3 class="c-item__title">Text Text Text Text Text Text Text Text Text Text</h3>
+                                            <div class="c-item__author">SEVENTEEN</div>
+                                            <div class="c-item__price">2,000円（税抜）</div>
+                                            <div class="c-item__date">2020/01/22 発売</div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bg_slider_top"></div>
+                    </div>
+                </section>
+                <section class="util_sp section recomend" id="container_history">
+                    <div class="upper">
+                        <div class="tlt_main">
+                            <div class="item_thumbnail">
+                                <img src="assets/img/top/pc/browsing_history.png" alt="">
+                            </div>
+                            <span>閲覧履歴</span>
+                        </div>
+                        <div class="container_recomend">
+                            <ul class="list_item_recomend">
+                                <li>
+                                    <a class="c-item" href="#">
+                                        <div class="item_thumbnail">
+                                            <img class="util_pc" src="assets/img/top/pc/200x200.png" alt="">
+                                            <img class="util_sp" src="assets/img/top/pc/200x200.png" alt="">
+                                        </div>
+                                        <div class="c-item__body">
+                                            <div class="c_category"><span>CD</span></div>
+                                            <h3 class="c-item__title">Text Text Text Text Text Text Text Text Text Text</h3>
+                                            <div class="c-item__author">SEVENTEEN</div>
+                                            <div class="c-item__price">2,000円（税抜）</div>
+                                            <div class="c-item__date">2020/01/22 発売</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="c-item" href="#">
+                                        <div class="item_thumbnail">
+                                            <img class="util_pc" src="assets/img/top/pc/200x200.png" alt="">
+                                            <img class="util_sp" src="assets/img/top/pc/200x200.png" alt="">
+                                        </div>
+                                        <div class="c-item__body">
+                                            <div class="c_category"><span>CD</span></div>
+                                            <h3 class="c-item__title">Text Text Text Text Text Text Text Text Text Text</h3>
+                                            <div class="c-item__author">SEVENTEEN</div>
+                                            <div class="c-item__price">2,000円（税抜）</div>
+                                            <div class="c-item__date">2020/01/22 発売</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="c-item" href="#">
+                                        <div class="item_thumbnail">
+                                            <img class="util_pc" src="assets/img/top/pc/200x200.png" alt="">
+                                            <img class="util_sp" src="assets/img/top/pc/200x200.png" alt="">
+                                        </div>
+                                        <div class="c-item__body">
+                                            <div class="c_category"><span>CD</span></div>
+                                            <h3 class="c-item__title">Text Text Text Text Text Text Text Text Text Text</h3>
+                                            <div class="c-item__author">SEVENTEEN</div>
+                                            <div class="c-item__price">2,000円（税抜）</div>
+                                            <div class="c-item__date">2020/01/22 発売</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="c-item" href="#">
+                                        <div class="item_thumbnail">
+                                            <img class="util_pc" src="assets/img/top/pc/200x200.png" alt="">
+                                            <img class="util_sp" src="assets/img/top/pc/200x200.png" alt="">
+                                        </div>
+                                        <div class="c-item__body">
+                                            <div class="c_category"><span>CD</span></div>
+                                            <h3 class="c-item__title">Text Text Text Text Text Text Text Text Text Text</h3>
+                                            <div class="c-item__author">SEVENTEEN</div>
+                                            <div class="c-item__price">2,000円（税抜）</div>
+                                            <div class="c-item__date">2020/01/22 発売</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="c-item" href="#">
+                                        <div class="item_thumbnail">
+                                            <img class="util_pc" src="assets/img/top/pc/200x200.png" alt="">
+                                            <img class="util_sp" src="assets/img/top/pc/200x200.png" alt="">
+                                        </div>
+                                        <div class="c-item__body">
+                                            <div class="c_category"><span>CD</span></div>
+                                            <h3 class="c-item__title">Text Text Text Text Text Text Text Text Text Text</h3>
+                                            <div class="c-item__author">SEVENTEEN</div>
+                                            <div class="c-item__price">2,000円（税抜）</div>
+                                            <div class="c-item__date">2020/01/22 発売</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="c-item" href="#">
+                                        <div class="item_thumbnail">
+                                            <img class="util_pc" src="assets/img/top/pc/200x200.png" alt="">
+                                            <img class="util_sp" src="assets/img/top/pc/200x200.png" alt="">
+                                        </div>
+                                        <div class="c-item__body">
+                                            <div class="c_category"><span>CD</span></div>
+                                            <h3 class="c-item__title">Text Text Text Text Text Text Text Text Text Text</h3>
+                                            <div class="c-item__author">SEVENTEEN</div>
+                                            <div class="c-item__price">2,000円（税抜）</div>
+                                            <div class="c-item__date">2020/01/22 発売</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="c-item" href="#">
+                                        <div class="item_thumbnail">
+                                            <img class="util_pc" src="assets/img/top/pc/200x200.png" alt="">
+                                            <img class="util_sp" src="assets/img/top/pc/200x200.png" alt="">
+                                        </div>
+                                        <div class="c-item__body">
+                                            <div class="c_category"><span>CD</span></div>
+                                            <h3 class="c-item__title">Text Text Text Text Text Text Text Text Text Text</h3>
+                                            <div class="c-item__author">SEVENTEEN</div>
+                                            <div class="c-item__price">2,000円（税抜）</div>
+                                            <div class="c-item__date">2020/01/22 発売</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="c-item" href="#">
+                                        <div class="item_thumbnail">
+                                            <img class="util_pc" src="assets/img/top/pc/200x200.png" alt="">
+                                            <img class="util_sp" src="assets/img/top/pc/200x200.png" alt="">
+                                        </div>
+                                        <div class="c-item__body">
+                                            <div class="c_category"><span>CD</span></div>
+                                            <h3 class="c-item__title">Text Text Text Text Text Text Text Text Text Text</h3>
+                                            <div class="c-item__author">SEVENTEEN</div>
+                                            <div class="c-item__price">2,000円（税抜）</div>
+                                            <div class="c-item__date">2020/01/22 発売</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="c-item" href="#">
+                                        <div class="item_thumbnail">
+                                            <img class="util_pc" src="assets/img/top/pc/200x200.png" alt="">
+                                            <img class="util_sp" src="assets/img/top/pc/200x200.png" alt="">
+                                        </div>
+                                        <div class="c-item__body">
+                                            <div class="c_category"><span>CD</span></div>
+                                            <h3 class="c-item__title">Text Text Text Text Text Text Text Text Text Text</h3>
+                                            <div class="c-item__author">SEVENTEEN</div>
+                                            <div class="c-item__price">2,000円（税抜）</div>
+                                            <div class="c-item__date">2020/01/22 発売</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="c-item" href="#">
+                                        <div class="item_thumbnail">
+                                            <img class="util_pc" src="assets/img/top/pc/200x200.png" alt="">
+                                            <img class="util_sp" src="assets/img/top/pc/200x200.png" alt="">
+                                        </div>
+                                        <div class="c-item__body">
+                                            <div class="c_category"><span>CD</span></div>
+                                            <h3 class="c-item__title">Text Text Text Text Text Text Text Text Text Text</h3>
+                                            <div class="c-item__author">SEVENTEEN</div>
+                                            <div class="c-item__price">2,000円（税抜）</div>
+                                            <div class="c-item__date">2020/01/22 発売</div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="more_01">
+                                <span>もっと見る</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="inner">
+            <div class="content_list">
+                <div>
+                    <p class="logo_footer">
+                        <a href="#">
+                            <img class="util_pc" src="assets/img/top/pc/footer_logo.png" alt="">
+                            <img class="util_sp" src="assets/img/top/sp/Ultra_Shibuya.png" alt="">
+                        </a>
+                    </p>
+                    <ul class="util_pc">
+                        <li>Ultra Shibuya</li>
+                        <li>〒150-0011 東京都渋谷区東1-28-9</li>
+                        <li>TEL : 03-5485-2301</li>
+                    </ul>
+                </div>
+                <div class="container_newsletter">
+                    <div class="newsletter">
+                        <h3>メルマガに登録してお得な情報を受け取ろう！</h3>
+                        <form class="submit_email" action="">
+                            <p></p>
+                            <input type="email" placeholder="メールアドレスを入力してください">
+                            <button class="btn btn_email" type="submit">メルマガに登録する</button>
+                        </form>
+                    </div>
+                    <div class="footer_link">
+                        <div class="nav_footer">
+                            <ul>
+                                <li><a href="#">利用規約</a></li>
+                                <li><a href="#">プライバシーポリシー</a></li>
+                                <li><a href="#">特定商取引法について</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">ご利用ガイド</a></li>
+                                <li><a href="#">店舗情報</a></li>
+                                <li><a href="#">お問い合わせ</a></li>
+                            </ul>
+                        </div>
+                        <div class="sns_social">
+                            <ul class="col3">
+                                <li>
+                                    <a class="resp-sharing-button__link" href="https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.jotnw.or.jp%2Fkids%2F" target="_blank" rel="noopener" aria-label="">
+                                        <img src="assets/img/top/pc/btn_share_insta.png" alt="sns facebook">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="resp-sharing-button__link" href="https://twitter.com/intent/tweet/?text=%E8%87%93%E5%99%A8%E7%A7%BB%E6%A4%8D%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%80%81%E3%82%AF%E3%82%A4%E3%82%BA%E3%82%92%E3%81%97%E3%81%AA%E3%81%8C%E3%82%89%E6%A5%BD%E3%81%97%E3%81%8F%E5%AD%A6%E3%81%B9%E3%82%8B%E3%82%88%EF%BC%81%E5%AE%B6%E6%97%8F%E3%81%BF%E3%82%93%E3%81%AA%E3%81%A7%E5%AD%A6%E3%82%93%E3%81%A7%E3%81%AD%EF%BC%81&amp;url=https%3A%2F%2Fwww.jotnw.or.jp%2Fkids%2F"
+                                       target="_blank" rel="noopener" aria-label="">
+                                        <img src="assets/img/top/pc/btn_share_fb.png" alt="sns twitter">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="line_btn" href="http://line.me/R/msg/text/?臓器移植について、クイズをしながら楽しく学べるよ！家族みんなで学んでね！https://www.jotnw.or.jp/kids">
+                                        <img src="assets/img/top/pc/btn_share_twitter.png" alt="sns line">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <ul class="util_sp info_company">
+                    <li>Ultra Shibuya</li>
+                    <li>〒150-0011 東京都渋谷区東1-28-9</li>
+                    <li>TEL : 03-5485-2301</li>
+                </ul>
+            </div>
+        </div>
+        <p class="copy_right">Copyright © ULTRA-VYBE, INC. All rights reserved</p>
+    </footer>
+    <div id="stop" class="scrollTop">
+        <span><a href="">Top</a></span>
+    </div>
+</div>
+
+<div id="advanced_search_popup" style="display: none">
+    <div class="upper">
+        <form class="inner_advanced_search" action="">
+            <div class="banner_search">
+                <div class="tlt_search_popup">
+                    <div class="item_thumbnail">
+                        <img src="assets/img/new_img/icon_urtra_serch_l.png" alt="">
+                    </div>
+                    <h3>ウルトラ検索</h3>
+                    <span class="util_pc">｜条件を入力して検索ができます</span>
+                </div>
+            </div>
+            <div class="container_search">
+                <div class="inner_col__">
+                    <ul class="col__">
+                        <li>
+                            <div class="box_form_search">
+                                <div class="ttl">アーティスト名</div>
+                                <div>
+                                    <input type="text" value="" placeholder="" class="normal_input">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="box_form_search">
+                                <div class="ttl">タイトル</div>
+                                <div>
+                                    <input type="text" value="" placeholder="" class="normal_input">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="box_form_search">
+                                <div class="ttl">曲名</div>
+                                <div>
+                                    <input type="text" value="" placeholder="" class="normal_input">
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="col__">
+                        <li>
+                            <div class="box_form_search">
+                                <div class="ttl">レーベル名</div>
+                                <div>
+                                    <input type="text" value="" placeholder="" class="normal_input">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="box_form_search">
+                                <div class="ttl">商品番号</div>
+                                <div>
+                                    <input type="text" value="" placeholder="" class="normal_input">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="box_form_search">
+                                <div class="ttl">バーコード</div>
+                                <div>
+                                    <input type="text" value="" placeholder="" class="normal_input">
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="option check">
+                    <div class="price_option">
+                        <p class="ttl check"><a href="#">価格</a></p>
+                        <div class="narrowPrice searchList clearfix">
+                            <div id="searchPrice" class="slide_size ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content">
+                                <div class="slider"></div>
+                                <div class="ui-slider-range ui-corner-all ui-widget-header" style="left: 0%; width: 100%;"></div>
+                                <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default last_first_price" style="left: 0%;"></span>
+                                <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default last_child_price" style="left: 100%;"></span></div>
+                            <div class="control clearfix">
+                                <p><span>￥</span><input type="text" id="p_pris" maxlength="10" class="sliderMin" name="p_pris" value=""></p>
+                                <p><span>￥</span><input type="text" id="p_prie" maxlength="10" class="sliderMax" name="p_prie" value=""></p>
+                                <input id="p_pri_max_slider" type="hidden" name="p_pri_max_slider" value="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="country_sale">
+                        <p class="ttl check"><a href="#">発売国</a></p>
+                        <div class="form_item">
+                            <div class="item_check">
+                                <input type="checkbox" value="" id="unspeci">
+                                <label for="unspeci" class="checkbox normal">指定なし</label>
+                            </div>
+                            <div class="item_check">
+                                <input type="checkbox" value="" id="domestic">
+                                <label for="domestic" class="checkbox normal">国内版</label>
+                            </div>
+                            <div class="item_check">
+                                <input type="checkbox" value="" id="import">
+                                <label for="import" class="checkbox normal">輸入盤</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="check_status">
+                        <p class="ttl check"><a href="#">状態</a></p>
+                        <div class="form_item">
+                            <div class="item_check">
+                                <input type="checkbox" value="" id="unspeci_02">
+                                <label for="unspeci_02" class="checkbox normal">指定なし</label>
+                            </div>
+                            <div class="item_check">
+                                <input type="checkbox" value="" id="new_product">
+                                <label for="new_product" class="checkbox normal">新品</label>
+                            </div>
+                            <div class="item_check">
+                                <input type="checkbox" value="" id="sec_hand">
+                                <label for="sec_hand" class="checkbox normal">中古</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sales_status">
+                        <p class="ttl check"><a href="#">販売状況</a></p>
+                        <div class="form_item">
+                            <div class="item_check">
+                                <input type="checkbox" value="" id="unspeci_03">
+                                <label for="unspeci_03" class="checkbox normal">指定なし</label>
+                            </div>
+                            <div class="item_check">
+                                <input type="checkbox" value="" id="under_reservation">
+                                <label for="under_reservation" class="checkbox normal">予約受付中</label>
+                            </div>
+                            <div class="item_check">
+                                <input type="checkbox" value="" id="sales">
+                                <label for="sales" class="checkbox normal">販売中</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="display_order">
+                        <p class="ttl check"><a href="#">検索結果表示順</a></p>
+                        <div id="box_check_option_search" class="box_select__">
+                            <select class="box_select_sort box_select__list_search" name="state">
+                                <option></option>
+                                <option value="all">新着順</option>
+                                <option value="all">値段の安い順</option>
+                                <option value="all">値段の高い順</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="btn_submit">
+                <button type="button" class="btn_short01 btn_reset">条件をリセット</button>
+                <button type="submit" class="btn_short01 btn_submit_form"><span>この条件で検索</span></button>
+            </div>
+        </form>
+    </div>
+</div>
+<div style="display: none;" id="hidden-search-sp">
+    <div class="modal">
+        <form class="form-search" action="#" method="post">
+            <p></p>
+            <input type="text" placeholder="キーワードで検索">
+            <button type="submit" class="">
+                <img class="util_sp" src="assets/img/top/sp/sp_header_Icon_search.png" alt="">
+            </button>
+        </form>
+    </div>
+</div>
+<!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>-->
+<script src="assets/libs/js/jquery.min.js" defer="defer"></script>
+<script src="assets/libs/js/jquery.fancybox.min.js" defer="defer"></script>
+<script src="assets/libs/js/slick.min.js" defer="defer"></script>
+<script src="assets/libs/js/select2.min.js" defer="defer"></script>
+<script src="assets/libs/js/jquery.easing.js" defer="defer"></script>
+<script src="assets/libs/js/jquery-ui.slider.js" defer="defer"></script>
+<script src="assets/js/check_price_search.js" defer="defer"></script>
+<script src="assets/libs/js/xzoom.min.js" defer="defer"></script>
+<script src="assets/libs/js/jquery.matchHeight-min.js" defer="defer"></script>
+<script src="assets/libs/js/owl.carousel.min.js" defer="defer"></script>
+<script src="assets/js/main.js" defer="defer"></script>
+</body>
+</html>

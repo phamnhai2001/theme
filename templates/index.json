@@ -1,5 +1,8 @@
 {
   "sections": {
+    "menu": {
+
+    },
     "feature": {
       "type": "feature",
       "settings": {
@@ -60,6 +63,7 @@
     }
   },
   "order": [
+    "menu",
     "feature",
     "ranking",
     "recomend",
