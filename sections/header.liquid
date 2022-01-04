@@ -14,6 +14,7 @@
                 <ul class="search-card">
                     <li class="util_pc">
                         <a class="nav_item_top" href="#">お知らせ</a>
+                      	<a class="nav_item_top" href="#">{{section.settings}}</a>
                     </li>
                     <li class="util_pc">
                         <a class="nav_item_top" href="#">お気に入り</a>
@@ -25,8 +26,8 @@
                                 <input type="text" class="search_box_input" placeholder="キーワードを入力">
 
                                 <button type="submit" class="search_box_button">
-                                {% if block.settings.icon != blank %}
-                                    <img class="util_pc" srcset="{{ block.settings.icon | img_url }}" src=" {{ block.settings.icon | img_url: width: 50 | image_tag }}" alt="{{ block.settings.icon.alt | escape }}">
+                                {% if block.settings.image != blank %}
+                                    <img class="util_pc" src=" {{ block.settings.image | img_url: width: 50 | image_tag }}" alt="">
                                 {% else %}
                                     {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
                                 {% endif %}
@@ -96,6 +97,7 @@
     "tag": "section",
     "settings": [
         
+		
     ],
     "blocks": [
         {
@@ -120,7 +122,7 @@
             "settings": [
                 {
                     "type": "image_picker",
-                    "id": "icon",
+                    "id": "image",
                     "label": "image icon"
                 }
             ]
