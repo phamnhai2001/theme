@@ -946,7 +946,7 @@ section#inner_list_item>.upper {
 
 #slick_main .slick-prev:before {
     content: ' ';
-    background-image: url("../img/top/pc/icon_arrow_left.png");
+  background-image: {{ 'icon_arrow_left.png' | asset_url }};
     background-repeat: no-repeat;
     width: 43px;
     height: 43px;
