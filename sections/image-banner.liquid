@@ -10,10 +10,8 @@
               {% for block in section.blocks %}
   {% case block.type %}
     {% when 'slide' %}
-      <div class="slide" {{ block.shopify_attributes }}>
+      
         <img class="util_pc" src=" {{ block.settings.image | image_url: 'master' }} " alt="">
-      </div>
-    ...
   {% endcase %}
 {% endfor %}
                 <img class="util_sp" src="assets/img/top/sp/sp_slider_01.png" alt="">
