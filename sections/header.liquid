@@ -31,7 +31,7 @@
                                   {%if ImageURL != blank %}
                                     <img class="util_pc" src=" {{ ImageURL | img_url: 'master'}}">    
                                   {%else%}
-                                  	 <img class="util_pc" src=" {{ 'header_icon_search' | img_url: 'master'}}">
+                                  	 <img class="util_pc" src=" {{ 'header_icon_search.png' | asset_url }}">
                                   {%endif%}
                             </button>
                             </form>
