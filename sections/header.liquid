@@ -55,7 +55,7 @@
                     </li>
                     <li class="util_pc">
                         <a href="advanced_search.html" id="advanced_search">
-                            <div class="advanced_search">
+                            <div class="advanced_search" {{ block.shopify_attributes }}>
                                 {% for block in section.blocks %}
                                   	<img class="util_pc" src=" {{ block.settings.image | img_url: 'master' }}"> 
 <!--                                          {{ block.settings.image | img_url: 'master' }} -->
