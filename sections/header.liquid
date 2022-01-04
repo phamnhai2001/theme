@@ -8,7 +8,6 @@
                             <span class="icon_nav_sp"></span>
                             <span class="icon_nav_sp"></span>
                             <span class="icon_nav_sp"></span>
-                            <span class="icon_nav_sp"></span>
                         </a>
                     </li>
                 </ul>
@@ -28,8 +27,9 @@
                                 <input type="text" class="search_box_input" placeholder="キーワードを入力">
 
                                 <button type="submit" class="search_box_button">
-                                    {%assign ImageURL = section.settings.image %}
-                                    <img class="util_pc" src=" {{ ImageURL | img_url: 'master'}}">         	
+<!--             					<img class="util_pc" src=" {{ 'header_icon_search.png' | asset_url }} "> -->
+                                    	<img class="util_pc" src=" {{ block.settings.image | img_url: 'master'}}">
+                                  	
                             </button>
                             </form>
                         </div>
@@ -94,15 +94,27 @@
 {
     "name": "Header",
     "settings": [
-  	  {
-        "type": "header",
-        "content": "Special settings"
-      },
-          {
-            "type": "image_picker",
-            "id": "image",
-            "label": "Image"
-          }
-    ]
-  }
+        
+		
+    ],
+    "blocks": [
+        {
+            "name": "image",
+            "type": "image",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "image icon"
+                }
+            ]
+        }
+    ],
+	"presets": [
+		{
+			"category": "image",
+			"name": "header"
+		}
+	]
+}
 {% endschema %}
