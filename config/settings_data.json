@@ -9,10 +9,17 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/header_icon_search.png"
             }
+          },
+          "b9050e43-0091-4dd0-ab7b-02c98cf36dae": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/icon_urtra_serch.png"
+            }
           }
         },
         "block_order": [
-          "4e9f0327-d097-4438-bcba-4f72065df08c"
+          "4e9f0327-d097-4438-bcba-4f72065df08c",
+          "b9050e43-0091-4dd0-ab7b-02c98cf36dae"
         ],
         "settings": {
           "title": ""
