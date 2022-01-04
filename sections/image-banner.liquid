@@ -2,11 +2,17 @@
     <div class="slider-wrap">
         <div class="image-slider">
             <div class="img-wrap">
-                    {% if block.settings.image != blank %}
+<!--                     {% if block.settings.image != blank %}
                         <img class="util_pc" src=" {{ block.settings.image | image_url: 'master' }} " alt="">
                     {% else %}
                         <img class="util_pc" src=" {{ 'slider_01.png' | asset_url }}">
-                    {% endif %} 
+                    {% endif %} -->
+               {%assign ImageURL = section.settings.image %}
+                                    {%if ImageURL != blank %}
+                                        <img class="util_pc" src=" {{ ImageURL | img_url: 'master'}}">    
+                                    {%else%}
+                                  	    <img class="util_pc" src=" {{ 'slider_01.png' | asset_url }}">
+                                    {%endif%}
                 <img class="util_sp" src="assets/img/top/sp/sp_slider_01.png" alt="">
             </div>
             <div class="img-wrap">
@@ -39,20 +45,15 @@
 {
     "name": "image-banner",
     "settings": [
-        
-    ],
-    "blocks": [
-        {
-            "name": "image",
-            "type": "image",
-            "settings": [
-                {
-                    "type": "image_picker",
-                    "id": "image",
-                    "label": "Image"
-                }
-            ]
-        }
+  	  {
+        "type": "header",
+        "content": "Special settings"
+      },
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          }
     ]
 }
 {% endschema %}
