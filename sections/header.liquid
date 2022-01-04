@@ -13,11 +13,11 @@
                 </ul>
                 <ul class="search-card">
                     <li class="util_pc">
-<!--                         <a class="nav_item_top" href="#">お知らせ</a> -->
+                        <a class="nav_item_top" href="#">お知らせ</a>
                       	<a class="nav_item_top" href="#">{{ block.settings.heading | escape }}</a>
                     </li>
                     <li class="util_pc">
-<!--                         <a class="nav_item_top" href="#">お気に入り</a> -->
+                        <a class="nav_item_top" href="#">お気に入り</a>
                       	<a class="nav_item_top" href="#">{{block.settings.heading | escape }}</a>
                     </li>
                     <li>
@@ -27,20 +27,21 @@
                                 <input type="text" class="search_box_input" placeholder="キーワードを入力">
 
                                 <button type="submit" class="search_box_button">
-                                {% if block.settings.image != blank %}
+            					<img class="util_pc" src=" {{ 'header_icon_search.png' | asset_url }} ">
+<!--                               	{% if block.settings.image != blank %}
                                   	{%for block in section.blocks %}
                                     	<img class="util_pc" src=" {{ block.settings.image | img_url: 'master'}}">
                                   	{%endfor%}
-                                {% else %}
+                              	{% else %}
                                     {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
-                                {% endif %}
+                                {% endif %} -->
                             </button>
                             </form>
                         </div>
                         <div class="util_sp search_box">
                             <div class="search_box_button_sp">
                                 <a href="javascript:;" id="search_box_button_sp">
-                                    <!-- <img class="util_sp" src="assets/img/top/sp/sp_header_Icon_search.png" alt=""> -->
+                                    <img class="util_sp" src="assets/img/top/sp/sp_header_Icon_search.png" alt="">
                                     {% if block.settings.icon != blank %}
                                         <img class="util_pc" srcset="{{ block.settings.icon | img_url }}" src=" {{ block.settings.icon | img_url: width: 50 | image_tag }}" alt="{{ block.settings.icon.alt | escape }}">
                                     {% else %}
@@ -53,13 +54,13 @@
                     <li class="util_pc">
                         <a href="advanced_search.html" id="advanced_search">
                             <div class="advanced_search">
-                                <!-- <img class="util_pc" src="assets/img/top/pc/icon_urtra_serch.png" alt="詳しく検索"> -->
-                                {% if block.settings.icon != blank %}
+                                <img class="util_pc" src="{{ 'icon_urtra_serch.png' | asset_url }}" alt="詳しく検索">
+<!--                                 {% if block.settings.icon != blank %}
                                     <img class="util_pc" srcset="{{ block.settings.icon | img_url }}" src=" {{ block.settings.icon | img_url: width: 50 | image_tag }}" alt="詳しく検索">
                                 {% else %}
                                     {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
                                 {% endif %}
-                                <img class="util_sp" src="assets/img/top/sp/sp_icon_detailserch.png" alt="詳しく検索">
+                                <img class="util_sp" src="assets/img/top/sp/sp_icon_detailserch.png" alt="詳しく検索"> -->
                                 <span>ウルトラ検索</span>
                             </div>
                         </a>
@@ -67,12 +68,12 @@
                     <li>
                         <div class="cart">
                             <a href="#">
-                                <!-- <img class="util_pc" src="assets/img/top/pc/header_icon_cart.png" alt=""> -->
-                                {% if block.settings.icon != blank %}
+                                <img class="util_pc" src="{{ 'header_icon_cart.png' | asset_url }}" alt="">
+<!--                                 {% if block.settings.icon != blank %}
                                     <img class="util_pc" srcset="{{ block.settings.icon | image_url }}" src=" {{ block.settings.icon | image_url: width: 50 | image_tag }}" alt="{{ block.settings.icon.alt | escape }}">
                                 {% else %}
                                     {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
-                                {% endif %}
+                                {% endif %} -->
                                 <img class="util_sp" src="assets/img/top/sp/sp_icon_cart_bk.png" alt="">
                                 <span>15</span>
                             </a>
@@ -97,7 +98,6 @@
 {% schema %}
 {
     "name": "Header",
-    "tag": "section",
     "settings": [
         
 		
@@ -113,18 +113,13 @@
                     "label": "image icon"
                 }
             ]
-        },
+        }
+    ],
+	"presets": [
 		{
-			"name": "text",
-			"type": "text",
-			"settings": [
-				{
-					"type": "text",
-					"label": "Heading",
-					"id": "heading"
-				}
-			]
+			"category": "image",
+			"name": "header"
 		}
-    ]
+	]
 }
 {% endschema %}
