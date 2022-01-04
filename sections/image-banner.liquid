@@ -2,11 +2,11 @@
     <div class="slider-wrap">
         <div class="image-slider">
             <div class="img-wrap">
-               <img class="util_pc" src="{{ 'slider_01.png' |  asset_url }}" alt="">
+<!--                <img class="util_pc" src="{{ 'slider_01.png' |  asset_url }}" alt=""> -->
                {% if block.settings.image != blank %}
                     <img class="util_pc" src=" {{ 'block.settings.image' | image_url: 'master' }} " alt="">
                 {% else %}
-                    {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
+                    <img src= " {{ 'slider_01.png' | asset_url }}">
                 {% endif %} 
                 <img class="util_sp" src="assets/img/top/sp/sp_slider_01.png" alt="">
             </div>
