@@ -2,7 +2,7 @@
     <div class="slider-wrap">
         <div class="image-slider">
             <div class="img-wrap">
-                <img class="util_pc" src="assets/img/top/pc/slider_01.png" alt="">
+               <img class="util_pc" src="{{ 'slider_01.png' |  asset_url }}" alt="">
                 {% if block.settings.image != blank %}
                     <img class="util_pc" srcset="{{ block.settings.image | image_url }}" src=" {{ 'block.settings.image' | image_url: width: 50 | image_tag }}" alt="">
                 {% else %}
@@ -11,10 +11,10 @@
                 <img class="util_sp" src="assets/img/top/sp/sp_slider_01.png" alt="">
             </div>
             <div class="img-wrap">
-                <img src="assets/img/top/pc/slider_02.png" alt="">
+                <img class="util_pc" src="{{ 'slider_02.png' |  asset_url }}" alt="">
             </div>
             <div class="img-wrap">
-                <img class="util_pc" src="assets/img/top/pc/slider_01.png" alt="">
+                <img class="util_pc" src="{{ 'slider_01.png' |  asset_url }}" alt="">
                 <img class="util_sp" src="assets/img/top/sp/sp_slider_01.png" alt="">
             </div>
         </div>
