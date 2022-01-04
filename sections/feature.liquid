@@ -47,14 +47,24 @@
                 <div class="feature_item">
                     <a href="#">
                         <div class="item_thumbnail">
-                            <img src="assets/img/top/pc/banner_feature-3.png" alt="">
+<!--                             <img src="assets/img/top/pc/banner_feature-3.png" alt=""> -->
+                          {% if block.settings.image != blank %}
+                              <img class="util_pc" src=" {{ 'block.settings.image' | image_url: 'master' }} " alt="">
+                          {% else %}
+                             <img src= " {{ 'banner_feature-3.png' | asset_url }}">
+                          {% endif %}
                         </div>
                     </a>
                 </div>
                 <div class="feature_item">
                     <a href="#">
                         <div class="item_thumbnail">
-                            <img src="assets/img/top/pc/banner_feature-4.png" alt="">
+<!--                             <img src="assets/img/top/pc/banner_feature-4.png" alt=""> -->
+                          {% if block.settings.image != blank %}
+                              <img class="util_pc" src=" {{ 'block.settings.image' | image_url: 'master' }} " alt="">
+                          {% else %}
+                             <img src= " {{ 'banner_feature-4.png' | asset_url }}">
+                          {% endif %}
                         </div>
                     </a>
                 </div>
