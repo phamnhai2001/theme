@@ -30,7 +30,7 @@
                                   	{% assign ImgURL = block.settings.image %}
 <!--                                 {% if block.settings.image != blank %} -->
                                   	{%for block in section.blocks %}
-                                    	<img class="util_pc" src=" {{ ImgURL | img_url: 'master' }} "/>
+                                    	<img class="util_pc" src=" {{ ImgURL | img_url: 'master' }} ">
                                   	{%endfor%}
 <!--                                 {% else %}
                                     {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
