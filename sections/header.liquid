@@ -26,7 +26,7 @@
 
                                 <button type="submit" class="search_box_button">
                                 {% if block.settings.icon != blank %}
-                                    <img class="util_pc" srcset="{{ block.settings.icon | image_url }}" src=" {{ block.settings.icon | image_url: width: 50 | image_tag }}" alt="{{ block.settings.icon.alt | escape }}">
+                                    <img class="util_pc" srcset="{{ block.settings.icon | img_url }}" src=" {{ block.settings.icon | img_url: width: 50 | image_tag }}" alt="{{ block.settings.icon.alt | escape }}">
                                 {% else %}
                                     {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
                                 {% endif %}
@@ -38,7 +38,7 @@
                                 <a href="javascript:;" id="search_box_button_sp">
                                     <!-- <img class="util_sp" src="assets/img/top/sp/sp_header_Icon_search.png" alt=""> -->
                                     {% if block.settings.icon != blank %}
-                                        <img class="util_pc" srcset="{{ block.settings.icon | image_url }}" src=" {{ block.settings.icon | image_url: width: 50 | image_tag }}" alt="{{ block.settings.icon.alt | escape }}">
+                                        <img class="util_pc" srcset="{{ block.settings.icon | img_url }}" src=" {{ block.settings.icon | img_url: width: 50 | image_tag }}" alt="{{ block.settings.icon.alt | escape }}">
                                     {% else %}
                                         {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
                                     {% endif %}
