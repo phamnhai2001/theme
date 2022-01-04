@@ -27,9 +27,10 @@
                                 <input type="text" class="search_box_input" placeholder="キーワードを入力">
 
                                 <button type="submit" class="search_box_button">
-                                  	{% assign ImgURL = block.settings.image %}
+                                  	{% assign ImgURL = 'hello' %}
 <!--                                 {% if block.settings.image != blank %} -->
                                   	{%for block in section.blocks %}
+                                  		{{ImgURL}}
                                     	<img class="util_pc" src=" {{ ImgURL | img_url: 'master' }} ">
                                   	{%endfor%}
 <!--                                 {% else %}
