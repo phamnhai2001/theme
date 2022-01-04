@@ -13,7 +13,12 @@
                         <a class="c-item" href="#">
                             <span class="num_ranking">1</span>
                             <div class="item_thumbnail">
-                                <img class="util_pc" src="assets/img/top/pc/200x200.png" alt="">
+<!--                                 <img class="util_pc" src="assets/img/top/pc/200x200.png" alt=""> -->
+                              	{% if block.settings.image != blank %}
+                              		<img class="util_pc" src=" {{ 'block.settings.image' | image_url: 'master' }} " alt="">
+                          		{% else %}
+                             		<img src= " {{ '200x200.png' | asset_url }}">
+                          		{% endif %} 
                                 <img class="util_sp" src="assets/img/top/pc/200x200.png" alt="">
                             </div>
                             <div class="c-item__body">
