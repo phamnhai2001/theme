@@ -275,44 +275,31 @@
 
 {% schema %}
 {
-    "name": "recomend",
+    "name": "ranking",
     "tag": "section",
     "blocks": [
         {
             "type": "text",
-            "name": "text-ranking",
+            "name": "text-recomend",
             "settings": [
                 {
                     "type": "text",
                     "id": "text",
                     "default": "text block",
                     "label": "text"
-                },
-                {
-                    "type": "select",
-                    "id": "text_style",
-                    "options": [
-                        {
-                            "value": "body",
-                            "label": "option_1"
-                        },
-                        {
-                            "value": "subtitle",
-                            "label": "option_2"
-                        },
-                        {
-                            "value": "uppercase",
-                            "label": "option_3"
-                        }
-                    ],
-                    "default": "body",
-                    "label": "style-body"
                 }
             ]
         },
         {
             "type": "title",
-            "name": "title-ranking"
+            "name": "title-recomend",
+			"settings": [
+				{
+					"type": "text",
+					"id": "title",
+					"label": "Title"
+				}
+			]
         },
  		{
             "type": "image",
