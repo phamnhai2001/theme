@@ -29,7 +29,9 @@
                             <div class="c-item__body">
                                 <div class="c_category"><span>CD</span></div>
                                 <h3 class="c-item__title">Text Text Text Text Text Text Text Text Text Text</h3>
-                                <div class="c-item__author">SEVENTEEN</div>
+                                {%for vender in product.vender %}
+                                <div class="c-item__author">{{vender}}</div>
+                                {%endfor%}
                                 <div class="c-item__price">2,000円（税抜）</div>
                                 <div class="c-item__date">2020/01/22 発売</div>
                             </div>
