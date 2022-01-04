@@ -4,7 +4,7 @@
             <div class="img-wrap">
                <img class="util_pc" src="{{ 'slider_01.png' |  asset_url }}" alt="">
                {% if block.settings.image != blank %}
-                    <img class="util_pc"src=" {{ 'block.settings.image' | image_url: '50' }} " alt="">
+                    <img class="util_pc"src=" {{ 'block.settings.image' | image_url: 'master' }} " alt="">
                 {% else %}
                     {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
                 {% endif %} 
@@ -13,7 +13,7 @@
             <div class="img-wrap">
                 <img class="util_pc" src="{{ 'slider_02.png' |  asset_url }}" alt="">
                {% if block.settings.image != blank %}
-                    <img class="util_pc"src=" {{ 'block.settings.image' | image_url: '50' }} " alt="">
+                    <img class="util_pc"src=" {{ 'block.settings.image' | image_url: 'master' }} " alt="">
                 {% else %}
                     {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
                 {% endif %} 
@@ -21,7 +21,7 @@
             <div class="img-wrap">
                 <img class="util_pc" src="{{ 'slider_01.png' |  asset_url }}" alt="">
                {% if block.settings.image != blank %}
-                    <img class="util_pc"src=" {{ 'block.settings.image' | image_url: '50' }} " alt="">
+                    <img class="util_pc"src=" {{ 'block.settings.image' | image_url: 'master' }} " alt="">
                 {% else %}
                     {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
                 {% endif %} 
