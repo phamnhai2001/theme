@@ -11,7 +11,12 @@
                 <div class="feature_item">
                     <a href="#">
                         <div class="item_thumbnail">
-                            <img src="assets/img/top/pc/banner_feature.png" alt="">
+<!--                             <img src="assets/img/top/pc/banner_feature.png" alt=""> -->
+                          {% if block.settings.image != blank %}
+                              <img class="util_pc"src=" {{ 'block.settings.image' | image_url: 'master' }} " alt="">
+                          {% else %}
+                              {{ 'banner_feature.png' | asset_url }}
+                          {% endif %} 
                         </div>
                     </a>
                 </div>
