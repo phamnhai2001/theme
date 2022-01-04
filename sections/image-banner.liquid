@@ -10,22 +10,18 @@
                 <img class="util_sp" src="assets/img/top/sp/sp_slider_01.png" alt="">
             </div>
             <div class="img-wrap">
-                {% for block in section.blocks %}
                     {% if block.settings.image != blank %}
                         <img class="util_pc" src=" {{ block.settings.image | image_url: 'master' }} " alt="">
                     {% else %}
                         <img class="util_pc" src=" {{ 'slider_02.png' | asset_url }}">
                     {% endif %} 
-                {%endfor%} 
             </div>
             <div class="img-wrap">
-                {% for block in section.blocks %}
                     {% if block.settings.image != blank %}
                         <img class="util_pc" src=" {{ block.settings.image | image_url: 'master' }} " alt="">
                     {% else %}
                         <img class="util_pc" src=" {{ 'slider_01.png' | asset_url }}">
                     {% endif %} 
-                {%endfor%}
                 <img class="util_sp" src="assets/img/top/sp/sp_slider_01.png" alt="">
             </div>
         </div>
