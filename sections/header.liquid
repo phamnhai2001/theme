@@ -27,12 +27,12 @@
                                 <input type="text" class="search_box_input" placeholder="キーワードを入力">
 
                                 <button type="submit" class="search_box_button">
-        					{%assign ImageURL = section.settings.image %}
-                                  {%if ImageURL != blank %}
-                                    <img class="util_pc" src=" {{ ImageURL | img_url: 'master'}}">    
-                                  {%else%}
-                                  	 <img class="util_pc" src=" {{ 'header_icon_search.png' | asset_url }}">
-                                  {%endif%}
+        					        {%assign ImageURL = section.settings.image %}
+                                    {%if ImageURL != blank %}
+                                        <img class="util_pc" src=" {{ ImageURL | img_url: 'master'}}">    
+                                    {%else%}
+                                        <img class="util_pc" src=" {{ 'header_icon_search.png' | asset_url }}">
+                                    {%endif%}
                             </button>
                             </form>
                         </div>
@@ -52,12 +52,12 @@
                     <li class="util_pc">
                         <a href="advanced_search.html" id="advanced_search">
                             <div class="advanced_search">
-                                <img class="util_pc" src="{{ 'icon_urtra_serch.png' | asset_url }}" alt="詳しく検索">
-<!--                                  {% if block.settings.icon != blank %}
-                                    <img class="util_pc" srcset="{{ block.settings.icon | img_url }}" src=" {{ block.settings.icon | img_url: width: 50 | image_tag }}" alt="詳しく検索">
-                                {% else %}
-                                    {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
-                                {% endif %} -->
+                                {%assign ImageURL = section.settings.image %}
+                                {%if ImageURL != blank %}
+                                    <img class="util_pc" src=" {{ ImageURL | img_url: 'master'}}" alt="詳しく検索">    
+                                {%else%}
+                                    <img class="util_pc" src=" {{ 'icon_urtra_serch.png' | asset_url }}" alt="詳しく検索">
+                                {%endif%}
                                 <img class="util_sp" src="assets/img/top/sp/sp_icon_detailserch.png" alt="詳しく検索">
                                 <span>ウルトラ検索</span>
                             </div>
@@ -66,12 +66,12 @@
                     <li>
                         <div class="cart">
                             <a href="#">
-                                <img class="util_pc" src="{{ 'header_icon_cart.png' | asset_url }}" alt="">
-<!--                                 {% if block.settings.icon != blank %}
-                                    <img class="util_pc" srcset="{{ block.settings.icon | image_url }}" src=" {{ block.settings.icon | image_url: width: 50 | image_tag }}" alt="{{ block.settings.icon.alt | escape }}">
-                                {% else %}
-                                    {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
-                                {% endif %} -->
+                                {%assign ImageURL = section.settings.image %}
+                                {%if ImageURL != blank %}
+                                    <img class="util_pc" src=" {{ ImageURL | img_url: 'master'}}">    
+                                {%else%}
+                                    <img class="util_pc" src=" {{ 'header_icon_cart.png' | asset_url }}">
+                                {%endif%}
                                 <img class="util_sp" src="assets/img/top/sp/sp_icon_cart_bk.png" alt="">
                                 <span>15</span>
                             </a>
