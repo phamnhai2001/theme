@@ -28,14 +28,8 @@
 
                                 <button type="submit" class="search_box_button">
                                     {%assign ImageURL = section.settings.image %}
-                                    <img class="util_pc" src=" {{ ImageURL | img_url: 'master'}}">
-<!--                               	{% if block.settings.image != blank %}
-                                  	{%for block in section.blocks %}
-                                    	<img class="util_pc" src=" {{ block.settings.image | img_url: 'master'}}">
-                                  	{%endfor%}
-                              	{% else %}
-                                    {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
-                                {% endif %} -->
+                                    <img class="util_pc" src=" {{ ImageURL | img_url: 'master'}}">         	
+                                  	
                             </button>
                             </form>
                         </div>
