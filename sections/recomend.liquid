@@ -277,6 +277,88 @@
 {
     "name": "recomend",
     "tag": "section",
+	"settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "default": "recomend",
+        "label": "Heading"
+      },
+      {
+        "type": "collection",
+        "id": "collection",
+        "label": "collection recomend"
+      },
+      {
+        "type": "range",
+        "id": "products_to_show",
+        "min": 2,
+        "max": 12,
+        "step": 2,
+        "default": 4,
+        "label": "products to show"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_view_all",
+        "default": true,
+        "label": "show view all"
+      },
+      {
+        "type": "checkbox",
+        "id": "swipe_on_mobile",
+        "default": false,
+        "label": "swip on mobile"
+      },
+      {
+        "type": "header",
+        "content": "content-header"
+      },
+      {
+        "type": "select",
+        "id": "image_ratio",
+        "options": [
+          {
+            "value": "adapt",
+            "label": "Adapt to image"
+          },
+          {
+            "value": "portrait",
+            "label": "Portraint"
+          },
+          {
+            "value": "square",
+            "label": "Square"
+          }
+        ],
+        "default": "adapt",
+        "label": "Imgae ratio"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_secondary_image",
+        "default": false,
+        "label": "show second image in hover"
+      },
+      {
+        "type": "checkbox",
+        "id": "add_image_padding",
+        "default": false,
+        "label": "add image padding"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_image_outline",
+        "default": true,
+        "label": "show image outline"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_vendor",
+        "default": false,
+        "label": "show vendor"
+      }
+  	],
     "blocks": [
         {
             "type": "text",
