@@ -3,7 +3,19 @@
     "sections": {
       "header": {
         "type": "header",
+        "blocks": {
+          "4e9f0327-d097-4438-bcba-4f72065df08c": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/header_icon_search.png"
+            }
+          }
+        },
+        "block_order": [
+          "4e9f0327-d097-4438-bcba-4f72065df08c"
+        ],
         "settings": {
+          "title": ""
         }
       },
       "menu": {
