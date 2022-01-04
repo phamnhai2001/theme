@@ -76,7 +76,12 @@
         <div class="upper">
             <div class="tlt_main">
                 <div class="item_thumbnail">
-                    <img class="util_pc" src="assets/img/top/pc/feature.png" alt="">
+<!--                     <img class="util_pc" src="assets/img/top/pc/feature.png" alt=""> -->
+                   {% if block.settings.image != blank %}
+                              <img class="util_pc" src=" {{ 'block.settings.image' | image_url: 'master' }} " alt="">
+                          {% else %}
+                             <img src= " {{ 'feature.png.png' | asset_url }}">
+                          {% endif %}
                     <img class="util_sp" src="assets/img/top/sp/FEATURE.png" alt="">
                 </div>
                 <span>特集</span>
