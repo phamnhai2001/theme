@@ -483,7 +483,7 @@ ul.search-card li:nth-child(02) {
     width: 27px;
     height: 27px;
     margin-top: -14px;
-    background-image: url("../img/top/pc/sidemenu_icon_arrow.png");
+  background-image: {{ 'sidemenu_icon_arrow.png' | asset_url}};
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100% auto;
