@@ -2,17 +2,20 @@
     <div class="slider-wrap">
         <div class="image-slider">
             <div class="img-wrap">
-<!--                     {% if block.settings.image != blank %}
-                        <img class="util_pc" src=" {{ block.settings.image | image_url: 'master' }} " alt="">
-                    {% else %}
-                        <img class="util_pc" src=" {{ 'slider_01.png' | asset_url }}">
-                    {% endif %} -->
-               {%assign ImageURL = section.settings.image %}
-                                    {%if ImageURL != blank %}
+                {%assign ImageURL = block.settings.image %}
+                {% for block in section.blocks %}
+                   {%if ImageURL != blank %}
                                         <img class="util_pc" src=" {{ ImageURL | img_url: 'master'}}">    
                                     {%else%}
                                   	    <img class="util_pc" src=" {{ 'slider_01.png' | asset_url }}">
                                     {%endif%}
+                {% endfor %}
+<!--                {%assign ImageURL = section.settings.image %}
+                                    {%if ImageURL != blank %}
+                                        <img class="util_pc" src=" {{ ImageURL | img_url: 'master'}}">    
+                                    {%else%}
+                                  	    <img class="util_pc" src=" {{ 'slider_01.png' | asset_url }}">
+                                    {%endif%} -->
                 <img class="util_sp" src="assets/img/top/sp/sp_slider_01.png" alt="">
             </div>
             <div class="img-wrap">
@@ -43,17 +46,23 @@
 
 {% schema %}
 {
-    "name": "image-banner",
-    "settings": [
-  	  {
-        "type": "header",
-        "content": "Special settings"
-      },
-          {
-            "type": "image_picker",
-            "id": "image",
-            "label": "Image"
-          }
-    ]
+  "name": "Banner",
+  "tag": "section",
+  "settings": [
+    
+  ],
+  "blocks": [
+     {
+       "name": "Image",
+       "type": "image",
+       "settings": [
+         {
+           "type": "image_picker",
+           "id": "image",
+           "label": "Image"
+         }
+       ]
+     }
+   ]
 }
 {% endschema %}
