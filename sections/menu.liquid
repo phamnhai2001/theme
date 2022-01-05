@@ -2,13 +2,15 @@
     <div class="logo util_pc">
         <a href="#">
           		{%assign ImageURL = block.settings.image %}
+          {%if ImageURL != blank %}
                  {% for block in section.blocks %}
-                   {%if ImageURL != blank %}
-                                        <img class="util_pc" src=" {{ ImageURL | img_url }}">    
+                   
+                                        <img class="util_pc" src=" {{ ImageURL | img_url }}">  
+                          {% endfor %}
+
                                     {%else%}
                                   	    <img class="util_pc" src=" {{ 'sidemenu_logo_img.png' | asset_url }}">
                                     {%endif%}
-                {% endfor %}
             <img class="util_sp" src="assets/img/top/sp/XXXXLOGO.png" alt="">
         </a>
     </div>
