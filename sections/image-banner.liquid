@@ -4,13 +4,11 @@
         <div class="image-slider">
             <div class="img-wrap">
                 {%assign ImageURL = block.settings.image %}
-                {% for block in section.blocks %}
                    {%if ImageURL != blank %}
                                         <img class="util_pc" src=" {{ ImageURL | img_url }}">    
                                     {%else%}
                                   	    <img class="util_pc" src=" {{ 'slider_01.png' | asset_url }}">
                                     {%endif%}
-                {% endfor %}
 <!--                {%assign ImageURL = section.settings.image %}
                                     {%if ImageURL != blank %}
                                         <img class="util_pc" src=" {{ ImageURL | img_url: 'master'}}">    
