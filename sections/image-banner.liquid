@@ -2,22 +2,17 @@
     <div class="slider-wrap">
         <div class="image-slider">
             <div class="img-wrap">
-<!--                 {%assign ImageURL = block.settings.image %}
+                {%assign ImageURL = block.settings.image %}
                    {%if ImageURL != blank %}
                                         <img class="util_pc" src=" {{ ImageURL | img_url }}">    
                                     {%else%}
                                   	    <img class="util_pc" src=" {{ 'slider_01.png' | asset_url }}">
-                                    {%endif%} -->
-               {%assign ImageURL = section.settings.image %}
-                                    {%if ImageURL != blank %}
-                                        <img class="util_pc" src=" {{ ImageURL | img_url: 'master'}}">    
-                                    {%else%}
-                                  	    <img class="util_pc" src=" {{ 'slider_01.png' | asset_url }}">
                                     {%endif%}
+               
                 <img class="util_sp" src="assets/img/top/sp/sp_slider_01.png" alt="">
             </div>
             <div class="img-wrap">
-                     {%assign ImageURL = section.settings.image %}
+                     {%assign ImageURL = block.settings.image %}
                                     {%if ImageURL != blank %}
                                         <img class="util_pc" src=" {{ ImageURL | img_url: 'master'}}">    
                                     {%else%}
@@ -25,7 +20,7 @@
                                     {%endif%}
             </div>
             <div class="img-wrap">
-                     {%assign ImageURL = section.settings.image %}
+                     {%assign ImageURL = block.settings.image %}
                                     {%if ImageURL != blank %}
                                         <img class="util_pc" src=" {{ ImageURL | img_url: 'master'}}">    
                                     {%else%}
@@ -49,12 +44,20 @@
   "name": "Banner",
   "tag": "section",
   "settings": [
-    {
-            "type": "image_picker",
-            "id": "image",
-            "label": "Image"
-          }
-  ]
-
+   
+  ],
+  "blocks": [
+     {
+       "name": "Image",
+       "type": "image",
+       "settings": [
+         {
+           "type": "image_picker",
+           "id": "image",
+           "label": "Image"
+         }
+       ]
+     }
+   ]
 }
 {% endschema %}
