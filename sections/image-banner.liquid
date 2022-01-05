@@ -1,39 +1,38 @@
 <div id="slick_main">
     <div class="slider-wrap">
         <div class="image-slider">
-            {%- for block in section.blocks -%}
             <div class="img-wrap">
-                {%assign ImageURL = block.settings.image %}
+<!--                 {%assign ImageURL = block.settings.image %}
                    {%if ImageURL != blank %}
                                         <img class="util_pc" src=" {{ ImageURL | img_url }}">    
                                     {%else%}
                                   	    <img class="util_pc" src=" {{ 'slider_01.png' | asset_url }}">
-                                    {%endif%}
-<!--                {%assign ImageURL = section.settings.image %}
+                                    {%endif%} -->
+               {%assign ImageURL = section.settings.image %}
                                     {%if ImageURL != blank %}
                                         <img class="util_pc" src=" {{ ImageURL | img_url: 'master'}}">    
                                     {%else%}
                                   	    <img class="util_pc" src=" {{ 'slider_01.png' | asset_url }}">
-                                    {%endif%} -->
+                                    {%endif%}
                 <img class="util_sp" src="assets/img/top/sp/sp_slider_01.png" alt="">
             </div>
             <div class="img-wrap">
-                    {% if block.settings.image != blank %}
-                        <img class="util_pc" src=" {{ block.settings.image | image_url: 'master' }} " alt="">
-                    {% else %}
-                        <img class="util_pc" src=" {{ 'slider_02.png' | asset_url }}">
-                    {% endif %} 
+                     {%assign ImageURL = section.settings.image %}
+                                    {%if ImageURL != blank %}
+                                        <img class="util_pc" src=" {{ ImageURL | img_url: 'master'}}">    
+                                    {%else%}
+                                  	    <img class="util_pc" src=" {{ 'slider_02.png' | asset_url }}">
+                                    {%endif%}
             </div>
             <div class="img-wrap">
-                    {% if block.settings.image != blank %}
-                        <img class="util_pc" src=" {{ block.settings.image | image_url: 'master' }} " alt="">
-                    {% else %}
-                        <img class="util_pc" src=" {{ 'slider_01.png' | asset_url }}">
-                    {% endif %} 
+                     {%assign ImageURL = section.settings.image %}
+                                    {%if ImageURL != blank %}
+                                        <img class="util_pc" src=" {{ ImageURL | img_url: 'master'}}">    
+                                    {%else%}
+                                  	    <img class="util_pc" src=" {{ 'slider_01.png' | asset_url }}">
+                                    {%endif%}
                 <img class="util_sp" src="assets/img/top/sp/sp_slider_01.png" alt="">
             </div>
-            {%- endfor -%}
-
         </div>
 
         <div class="dot_slider_main">
@@ -50,7 +49,15 @@
   "name": "Banner",
   "tag": "section",
   "settings": [
-    
+    {
+        "type": "header",
+        "content": "Special settings"
+      },
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          }
   ],
   "blocks": [
      {
