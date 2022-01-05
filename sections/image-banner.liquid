@@ -2,33 +2,33 @@
     <div class="slider-wrap">
         <div class="image-slider">
             <div class="img-wrap">
-               <img class="util_pc" src="{{ 'slider_01.png' |  asset_url }}" alt="">
-                {% for block in section.blocks %}
-                    {% if block.settings.image != blank %}
+<!--                     {% if block.settings.image != blank %}
                         <img class="util_pc" src=" {{ block.settings.image | image_url: 'master' }} " alt="">
                     {% else %}
                         <img class="util_pc" src=" {{ 'slider_01.png' | asset_url }}">
-                    {% endif %} 
-                {%endfor%} 
+                    {% endif %}  -->
+              {% for block in section.blocks %}
+  {% case block.type %}
+    {% when 'slide' %}
+      
+        <img class="util_pc" src=" {{ block.settings.image | image_url: 'master' }} " alt="">
+  {% endcase %}
+{% endfor %}
                 <img class="util_sp" src="assets/img/top/sp/sp_slider_01.png" alt="">
             </div>
             <div class="img-wrap">
-                {% for block in section.blocks %}
                     {% if block.settings.image != blank %}
                         <img class="util_pc" src=" {{ block.settings.image | image_url: 'master' }} " alt="">
                     {% else %}
                         <img class="util_pc" src=" {{ 'slider_02.png' | asset_url }}">
                     {% endif %} 
-                {%endfor%} 
             </div>
             <div class="img-wrap">
-                {% for block in section.blocks %}
                     {% if block.settings.image != blank %}
                         <img class="util_pc" src=" {{ block.settings.image | image_url: 'master' }} " alt="">
                     {% else %}
                         <img class="util_pc" src=" {{ 'slider_01.png' | asset_url }}">
                     {% endif %} 
-                {%endfor%}
                 <img class="util_sp" src="assets/img/top/sp/sp_slider_01.png" alt="">
             </div>
         </div>
@@ -41,25 +41,30 @@
         </div>
     </div>
 </div>
-
 {% schema %}
 {
-    "name": "image-banner",
-    "settings": [
-        
-    ],
-    "blocks": [
-        {
-            "name": "image",
-            "type": "image",
-            "settings": [
-                {
-                    "type": "image_picker",
-                    "id": "image",
-                    "label": "Image"
-                }
-            ]
-        }
-    ]
+  "name": "Slideshow",
+  "tag": "section",
+  "class": "slideshow",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Slideshow"
+    }
+  ],
+  "blocks": [
+     {
+       "name": "Slide",
+       "type": "slide",
+       "settings": [
+         {
+           "type": "image_picker",
+           "id": "image",
+           "label": "Image"
+         }
+       ]
+     }
+   ]
 }
 {% endschema %}
