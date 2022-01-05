@@ -14,6 +14,7 @@
       "image-banner": {
         "type": "image-banner",
         "settings": {
+          "image": "shopify:\/\/shop_images\/slider_01.png"
         }
       },
       "footer": {
