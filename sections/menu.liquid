@@ -1,7 +1,12 @@
 <nav id="nav">
     <div class="logo util_pc">
         <a href="#">
-            <img class="util_pc" src="assets/img/top/pc/sidemenu_logo_img.png" alt="">
+          		{%assign ImageURL = section.settings.image %}
+                {%if ImageURL != blank %}
+                      <img class="util_pc" src=" {{ ImageURL | img_url: 'master'}}">    
+                {%else%}
+                      <img class="util_pc" src=" {{ 'sidemenu_logo_img.png' | asset_url }}">
+                {%endif%}
             <img class="util_sp" src="assets/img/top/sp/XXXXLOGO.png" alt="">
         </a>
     </div>
