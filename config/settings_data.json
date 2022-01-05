@@ -19,10 +19,17 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/slider_01.png"
             }
+          },
+          "b25d09ca-6c7a-4018-bdac-f880253b99da": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/slider_02.png"
+            }
           }
         },
         "block_order": [
-          "c75ae64e-2bb6-42bc-bad5-6e281ee6d260"
+          "c75ae64e-2bb6-42bc-bad5-6e281ee6d260",
+          "b25d09ca-6c7a-4018-bdac-f880253b99da"
         ],
         "settings": {
         }
