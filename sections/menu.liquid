@@ -1,6 +1,7 @@
 <nav id="nav">
     <div class="logo util_pc">
         <a href="#">
+          {%- for block in section.blocks -%}
           		{%assign ImageURL = block.settings.image %}
           		{%if ImageURL != blank %}
                    
@@ -9,6 +10,7 @@
                 {%else%}
                    	<img class="util_pc" src=" {{ 'sidemenu_logo_img.png' | asset_url }}">
                 {%endif%}
+          {%- endfor -%}
             <img class="util_sp" src="assets/img/top/sp/XXXXLOGO.png" alt="">
         </a>
     </div>
