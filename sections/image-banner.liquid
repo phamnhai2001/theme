@@ -5,7 +5,7 @@
                 {%assign ImageURL = block.settings.image %}
                 {% for block in section.blocks %}
                    {%if ImageURL != blank %}
-                                        <img class="util_pc" src=" {{ ImageURL | img_url: 'master'}}">    
+                                        <img class="util_pc" src=" {{ ImageURL | img_url }}">    
                                     {%else%}
                                   	    <img class="util_pc" src=" {{ 'slider_01.png' | asset_url }}">
                                     {%endif%}
