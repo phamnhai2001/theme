@@ -1,7 +1,7 @@
 <div id="slick_main">
     <div class="slider-wrap">
-      {%- for block in section.blocks -%}
         <div class="image-slider">
+            {%- for block in section.blocks -%}
             <div class="img-wrap">
                 {%assign ImageURL = block.settings.image %}
                    {%if ImageURL != blank %}
@@ -32,8 +32,9 @@
                     {% endif %} 
                 <img class="util_sp" src="assets/img/top/sp/sp_slider_01.png" alt="">
             </div>
+            {%- endfor -%}
+
         </div>
-      {%- endfor -%}
 
         <div class="dot_slider_main">
             <span class="start-num">01</span>
