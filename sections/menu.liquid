@@ -1,14 +1,14 @@
 <nav id="nav">
     <div class="logo util_pc">
         <a href="#">
-          		{%assign ImageURL = block.settings.image %}
-          {%if ImageURL != blank %}
+          		{%assign ImageURL = blocks.settings.image %}
+          		{%if ImageURL != blank %}
                    
-                                        <img class="util_pc" src=" {{ ImageURL | img_url }}">  
+                    <img class="util_pc" src=" {{ ImageURL | img_url }}">  
 
-                                    {%else%}
-                                  	    <img class="util_pc" src=" {{ 'sidemenu_logo_img.png' | asset_url }}">
-                                    {%endif%}
+                {%else%}
+                   	<img class="util_pc" src=" {{ 'sidemenu_logo_img.png' | asset_url }}">
+                {%endif%}
             <img class="util_sp" src="assets/img/top/sp/XXXXLOGO.png" alt="">
         </a>
     </div>
