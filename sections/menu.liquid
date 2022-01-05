@@ -1,7 +1,7 @@
 <nav id="nav">
     <div class="logo util_pc">
         <a href="#">
-          		{%assign ImageURL = section.settings.image %}
+          		{%assign ImageURL = block.settings.image %}
           		{%if ImageURL != blank %}
                    
                     <img class="util_pc" src=" {{ ImageURL | img_url }}">  
