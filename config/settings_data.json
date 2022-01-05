@@ -27,11 +27,13 @@
           "cd9f9a4c-7082-44d8-93da-f4f624e0ed7e": {
             "type": "image",
             "settings": {
+              "image": "shopify:\/\/shop_images\/slider_02.png"
             }
           },
           "9bb48cb1-0554-4a65-b444-82d08740903b": {
             "type": "image",
             "settings": {
+              "image": "shopify:\/\/shop_images\/slider_01.png"
             }
           }
         },
