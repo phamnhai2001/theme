@@ -1,8 +1,7 @@
 <nav id="nav">
     <div class="logo util_pc">
         <a href="#">
-          {%- for block in section.blocks -%}
-          		{%assign ImageURL = block.settings.image %}
+          		{%assign ImageURL = section.settings.image %}
           		{%if ImageURL != blank %}
                    
                     <img class="util_pc" src=" {{ ImageURL | img_url }}">  
@@ -10,7 +9,6 @@
                 {%else%}
                    	<img class="util_pc" src=" {{ 'sidemenu_logo_img.png' | asset_url }}">
                 {%endif%}
-          {%- endfor -%}
             <img class="util_sp" src="assets/img/top/sp/XXXXLOGO.png" alt="">
         </a>
     </div>
@@ -227,18 +225,15 @@
 {
   "name": "menu",
   "tag": "section",
+	 "settings": [
+  	  {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          }
+    ],
   "blocks": [
-     {
-       "name": "Image",
-       "type": "image",
-       "settings": [
-         {
-           "type": "image_picker",
-           "id": "image",
-           "label": "Image"
-         }
-       ]
-     }
+     
    ]
 }
 {% endschema %}

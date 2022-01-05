@@ -8,16 +8,6 @@
       },
       "menu": {
         "type": "menu",
-        "blocks": {
-          "0e192ad2-8598-4232-abf5-b3132cfbcd02": {
-            "type": "image",
-            "settings": {
-            }
-          }
-        },
-        "block_order": [
-          "0e192ad2-8598-4232-abf5-b3132cfbcd02"
-        ],
         "settings": {
         }
       },
