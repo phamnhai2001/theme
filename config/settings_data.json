@@ -13,6 +13,24 @@
       },
       "image-banner": {
         "type": "image-banner",
+        "blocks": {
+          "297db479-62f0-475d-9cb2-8bbf3e53a1a3": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/slider_01.png"
+            }
+          },
+          "72cd9470-7ee0-4bde-b9c6-52fcc557f7d6": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/slider_02.png"
+            }
+          }
+        },
+        "block_order": [
+          "297db479-62f0-475d-9cb2-8bbf3e53a1a3",
+          "72cd9470-7ee0-4bde-b9c6-52fcc557f7d6"
+        ],
         "settings": {
         }
       },
