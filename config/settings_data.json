@@ -13,6 +13,17 @@
       },
       "image-banner": {
         "type": "image-banner",
+        "blocks": {
+          "c75ae64e-2bb6-42bc-bad5-6e281ee6d260": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/slider_01.png"
+            }
+          }
+        },
+        "block_order": [
+          "c75ae64e-2bb6-42bc-bad5-6e281ee6d260"
+        ],
         "settings": {
         }
       },
