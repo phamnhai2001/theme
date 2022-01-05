@@ -3,10 +3,8 @@
         <a href="#">
           		{%assign ImageURL = block.settings.image %}
           {%if ImageURL != blank %}
-                 {% for block in section.blocks %}
                    
                                         <img class="util_pc" src=" {{ ImageURL | img_url }}">  
-                          {% endfor %}
 
                                     {%else%}
                                   	    <img class="util_pc" src=" {{ 'sidemenu_logo_img.png' | asset_url }}">
