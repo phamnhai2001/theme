@@ -1,6 +1,6 @@
-{%- for block in section.blocks -%}
 <div id="slick_main">
     <div class="slider-wrap">
+      {%- for block in section.blocks -%}
         <div class="image-slider">
             <div class="img-wrap">
                 {%assign ImageURL = block.settings.image %}
@@ -33,6 +33,8 @@
                 <img class="util_sp" src="assets/img/top/sp/sp_slider_01.png" alt="">
             </div>
         </div>
+      {%- endfor -%}
+
         <div class="dot_slider_main">
             <span class="start-num">01</span>
             <div class="slider-progress">
@@ -42,7 +44,6 @@
         </div>
     </div>
 </div>
-{%- endfor -%}
 {% schema %}
 {
   "name": "Banner",
